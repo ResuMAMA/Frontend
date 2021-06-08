@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Resumama</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="login.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+     <div class = "navbarrr">
+    <a href = ""> <img src= "https://upload.wikimedia.org/wikipedia/en/thumb/6/61/Cross_icon_%28white%29.svg/2048px-Cross_icon_%28white%29.svg.png"> </a>
+     </div>
+        <section>
+  
+            <div class="box" id = "1">
+              
+              <div class="square" style="--i:0;"></div>
+              <div class="square" style="--i:1;"></div>
+              <div class="square" style="--i:2;"></div>
+              <div class="square" style="--i:3;"></div>
+              <div class="square" style="--i:4;"></div>
+              <div class="square" style="--i:5;"></div>
+              
+             <div class="container" > 
+              <div class="form"> 
+                <h2> <center>  Sign Up </center> </h2>
+                <form action="">
+                  <div class="inputBx">
+                    <input type="email" required="required">
+                    <span>  Email </span>
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/709/709699.svg" alt="user">
+                  </div>
+                  <div class="inputBx">
+                    <input type="email" required="required">
+                    <span>  Type your email again </span>
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/709/709699.svg" alt="user">
+                  </div>
+                  <div class="inputBx password">
+                    <input id="password-input" type="password" name="password" required="required">
+                    <span>Password</span>
+                    <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/1828/1828471.svg" alt="lock">
+                  </div>
+                  <div class="inputBx password">
+                    <input id="password-input" type="password" name="password" required="required">
+                    <span>Confirm Password</span>
+                    <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/1828/1828471.svg" alt="lock">
+                  </div>
+                <label class="remember"><input type="checkbox">
+                    Remember</label> 
+                  <div class="inputBx">
+                    <input type="submit" value="Sign In" disabled> 
+                  </div>
+            
+                </form>
+                <p>Already have an account? <a href="#" id="btnClick" >Log In</a></p>
+              </div>
+            </div>
+              
+            <!-- <div class="container" id = "2" style="display:none;" >  -->
+        
+
+            </div>
+
+            <div class="box" id = "2"  style="display:none;">
+              
+              <div class="square" style="--i:0;"></div>
+              <div class="square" style="--i:1;"></div>
+              <div class="square" style="--i:2;"></div>
+              <div class="square" style="--i:3;"></div>
+              <div class="square" style="--i:4;"></div>
+              <div class="square" style="--i:5;"></div>
+              
+             <div class="container" > 
+              <div class="form"> 
+                <h2> <center> Log In </center></h2>
+                <form action="">
+                  <div class="inputBx">
+                    <input type="email" required="required">
+                    <span>Email</span>
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/709/709699.svg" alt="user">
+                  </div>
+                  <div class="inputBx password">
+                    <input id="password-input" type="password" name="password" required="required">
+                    <span>Password</span>
+                    <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/1828/1828471.svg" alt="lock">
+                  </div>
+                  <label class="remember"><input type="checkbox">
+                    Remember</label>
+                  <div class="inputBx">
+                    <input type="submit" value="Log in" disabled> 
+                  </div>
+                </form>
+                <p>Forgot password? <a href="#">Click Here</a></p>
+                <p>Don't have an account <a href="#" id="btnClick2" >Sign up</a></p>
+              </div>
+            </div>
+              
+            <!-- <div class="container" id = "2" style="display:none;" >  -->
+        
+
+            </div>
+          </section>
+        <script src="script.js" ></script>
+    </body>
+</html>
