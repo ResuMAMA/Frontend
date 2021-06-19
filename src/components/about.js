@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import ReactCardCarousel from "react-card-carousel";
+import { Element } from 'react-scroll'
 
   function About() {
     return (
-   
-      <div class="Container_style" id="about">
+      <Element id="about" name='about'>
+      <div class="Container_style" >
 
           <div class="template-content">
               <h1>Professionally Designed <br /> Website Templates</h1>
@@ -23,7 +24,7 @@ import ReactCardCarousel from "react-card-carousel";
           </div>
        
       </div>
-      
+      </Element>
       
     );
   }

@@ -2,7 +2,8 @@ import React from "react";
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import ArrowDropDownRoundedIcon from '@material-ui/icons/ArrowDropDownRounded';
 import $ from 'jquery';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-scroll';
+
 
 $(document).ready(function() {
   // Transition effect for navbar 
@@ -16,6 +17,10 @@ $(document).ready(function() {
   });
 });
 
+function callogin(){
+  const element = document.getElementById("myNav");
+  element.style.width = "100%";
+}
 
 function Navbar() {
   return (
@@ -32,27 +37,37 @@ function Navbar() {
               <li class="nav-list-item">
                 <div class="nav-list-item-div">
 
-                 <a class="nav-list-content" href="#home"> Home</a>
-                  <ArrowDropDownRoundedIcon />
+                <Link activeClass="active" to="home" spy={true} smooth={true} duration={1000}>
+                Home<ArrowDropDownRoundedIcon />
+               </Link>
+
                 </div>
               </li>
               <li class="nav-list-item">
                 <div class="nav-list-item-div">
-                <a class="nav-list-content" href="#about"> About</a>
-                 
-                  <ArrowDropDownRoundedIcon />
+
+                <Link activeClass="active" to="about" spy={true} smooth={true} duration={1000}>
+                About<ArrowDropDownRoundedIcon />
+               </Link>
+
                 </div>
               </li>
               <li class="nav-list-item">
                 <div class="nav-list-item-div">
-                <a class="nav-list-content" href="#directions"> Directions</a>
-                  <ArrowDropDownRoundedIcon />
+
+                <Link activeClass="active" to="directions" spy={true} smooth={true} duration={1000}>
+                Directions<ArrowDropDownRoundedIcon />
+               </Link>
+
                 </div>
               </li>
               <li class="nav-list-item">
                 <div class="nav-list-item-div">
-                <a class="nav-list-content" href="#contact"> Contact</a>
-                  <ArrowDropDownRoundedIcon />
+
+                <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000}>
+                Contact<ArrowDropDownRoundedIcon />
+               </Link>
+
                 </div>
               </li>
               
@@ -61,10 +76,12 @@ function Navbar() {
         
       </div>
       <div class="sign-div">
-        <div class="sign-content">
-        <a href="login.html">Sign-in </a>
+   
+        <div class="sign-content" onClick={callogin}>
+        Sign-in
         <LockOpenIcon />
-        </div>          
+        </div>
+
       </div>
     </div>
   );

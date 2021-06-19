@@ -1,9 +1,11 @@
 import React from "react";
 import ReactCardCarousel from "react-card-carousel";
+import { Element } from 'react-scroll'
+
 function Directions(){
   return (
-   
-    <div class="Container_style" id="directions">
+    <Element id="directions" name='directions'>
+    <div class="Container_style" >
 
         <div class="template-content">
             <h1>Directions</h1>
@@ -21,7 +23,7 @@ function Directions(){
         </div>
      
     </div>
-    
+    </Element>
     
   );
 }

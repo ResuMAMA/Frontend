@@ -1,7 +1,11 @@
 import React from "react";
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
+import { Element } from 'react-scroll'
+
 function Home(){
-return <div class="Home-home" id="home">
+return (
+<Element id="home" name='home'>
+<div class="Home-home" >
         <div class="Home-main">
           <div class="Home-content">
             <h3 class="job-ready">Job ready?</h3>
@@ -17,6 +21,6 @@ return <div class="Home-home" id="home">
           </div>
         </div>
       </div>
-;
+      </Element>);
 }
 export default Home;
