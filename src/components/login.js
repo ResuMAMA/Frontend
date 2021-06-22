@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 function toggleForm(e) {
     e.preventDefault();
@@ -12,61 +12,75 @@ function closelogin(){
   }
 
 
-async function register (e){
-
-  e.preventDefault();
-console.log(e.emailuser);
-  e.preventDefault();
-    const response = await fetch(`https://localhost:8080/auth/register/`,{
-            method:"POST",
-        headers:{
-            "Content-Type":"application/json"
-           },
-        body:JSON.stringify({
-            "email":e.emailuser,
-            "username":e.usernameuser,
-            "password":e.passworduser
-        })
-        });
-if(response.status==200){  
-const data = await response.json();
-console.log(data);
-}
-else {
-  console.log("error");
-}
-      
-}
-
-
-async function loginuser(e){
-  e.preventDefault();
-  const response = await fetch(`https://localhost:8080/auth/login/`,{
-            method:"POST",
-        headers:{
-            "Content-Type":"application/json"
-           },
-        body:JSON.stringify({
-            "email":e.email,
-            "password":e.password
-        })
-        });
-if(response.status==200){  
-const Data = await response.json();
-console.log(Data);
-const realData = Data.data;
-window.localStorage.setItem ("token",realData.token);
-window.localStorage.setItem ("userid",realData.id);
-console.log(window.localStorage.getItem("token"));
-}
-else {
-    console.log("error");
-}        
-}
-
-
 
 function Login() {
+
+     //register states
+     const [username,setUsername]=useState();
+     const [email,setEmail]=useState();
+     const [password,setPassword]=useState();
+
+     //login states
+     const [loginEmail,setLoginEmail]=useState();
+     const [loginPass,setLoginPass]=useState();
+
+
+
+
+
+  async function register (e){
+
+    e.preventDefault();
+    //console.log(username+" "+email+" "+password)
+      const response = await fetch(`https://localhost:8080/auth/register/`,{
+              method:"POST",
+          headers:{
+              "Content-Type":"application/json"
+             },
+          body:JSON.stringify({
+              "email":email,
+              "username":username,
+              "password":password
+          })
+          });
+  if(response.status==200){  
+  const data = await response.json();
+  console.log(data);
+  }
+  else {
+    console.log("error");
+  }
+        
+  }
+  
+  
+  async function loginuser(e){
+    e.preventDefault();
+   // console.log(loginEmail+" "+loginPass)
+    const response = await fetch(`https://localhost:8080/auth/login/`,{
+              method:"POST",
+          headers:{
+              "Content-Type":"application/json"
+             },
+          body:JSON.stringify({
+              "email":loginEmail,
+              "password":loginPass
+          })
+          });
+  if(response.status==200){  
+  const Data = await response.json();
+  console.log(Data);
+  const realData = Data.data;
+  window.localStorage.setItem ("token",realData.token);
+  window.localStorage.setItem ("userid",realData.id);
+  console.log(window.localStorage.getItem("token"));
+  }
+  else {
+      console.log("error");
+  }        
+  }
+  
+
   return (
     <div class="overlay" id="myNav">
     <a class="closebtn" onClick={closelogin}>&times;</a>
@@ -80,11 +94,11 @@ function Login() {
             />
           </div>
           <div className="formBx">
-            <form onsubmit={loginuser}>
+            <form>
               <h2>Log In</h2>
-              <input type="email" name="email" placeholder="email" />
-              <input type="password" name="password" placeholder="Password" />
-              <input type="submit" name="" value="Login" />
+              <input type="email" name="email" placeholder="email" onChange={(e)=>setLoginEmail(e.target.value)}/>
+              <input type="password" name="password" placeholder="Password" onChange={(e)=>setLoginPass(e.target.value)}/>
+              <button onClick={(e)=>{loginuser(e)}}>Login</button>
               <p class="signup">
                 Don't have an account ?
                 <a onClick={toggleForm}>
@@ -96,12 +110,12 @@ function Login() {
         </div>
         <div className="user signupBx">
           <div className="formBx">
-            <form onsubmit={register}>
+            <form>
               <h2>Create an account</h2>
-              <input type="text" name="usernameuser" placeholder="Username" />
-              <input type="email" name="emailuser" placeholder="Email Address" />
-              <input type="password" name="passworduser" placeholder="Create Password" />
-              <input type="submit" name="" value="Sign Up" />
+              <input type="text" name="usernameuser" placeholder="Username" onChange={(e)=>setUsername(e.target.value)}/>
+              <input type="email" name="emailuser" placeholder="Email Address" onChange={(e)=>setEmail(e.target.value)}/>
+              <input type="password" name="passworduser" placeholder="Create Password" onChange={(e)=>setPassword(e.target.value)}/>
+              <button onClick={(e)=>{register(e)}}>Sign Up</button>
               <p class="signup">
                 Already have an account ?
                 <a onClick={toggleForm}>
