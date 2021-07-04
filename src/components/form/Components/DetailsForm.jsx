@@ -1,6 +1,7 @@
 import React from 'react'
 import './form.css'
 import {List} from '../SkillsTodo/List'
+import ExperienceForm from '../addExp/addExpForm';
 import '../SkillsTodo/style.css'
 function DetailsForm(){
 //console.log(ar);
@@ -22,13 +23,14 @@ return(
 
        
         <List ar={ar}/>
-       
+        <ExperienceForm />
          
          
       
             <h2>About</h2>
             <textarea placeholder="enter something abount you!"></textarea>
-            <h2>Experience</h2>
+            
+            
             <h2>Projects</h2>
    
   
