@@ -9,7 +9,7 @@ return (
 
 <div class="create">
  <div class="templates">
- <h1>Step 1 -> Select a template! </h1> 
+ <h1>Step 1  Select a template! </h1> 
  <div class="album"> 
 <Carousel autoPlay="false"  centerMode="false" >
     <div>
@@ -53,7 +53,7 @@ return (
   {/* form */}
 
   <div class="templates">
- <h1>Step 2 -> Fill in the Schema! </h1> 
+ <h1>Step 2  Fill in the Schema! </h1> 
  <div class="album"> 
 <img class="form-img" src="/img/form.png"></img>
   </div>
