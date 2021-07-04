@@ -1,28 +1,20 @@
 import React from 'react';
 import "./App.css";
-import Navbar from "./components/navbar";
-import Home from "./components/home";
-import About from "./components/about";
-import Responsive from "./components/responsive";
-import Mode from "./components/mode";
-import Contact from "./components/contact";
-import Directions from "./components/directions";
-import Login from "./components/login";
-import { Domain } from '@material-ui/icons';
+import { Route,Switch} from "react-router-dom";
+import LandingPage from './components/landingPage';
+import Dashboard from './components/dashboard/dashboard';
+import Create from './components/createPortfolio/create';
 
 function App() {
-  return (<div>
-       <Navbar />
-       <Login />
-       <Home />
-       <About />
-      <Responsive />
-      <Mode />
-      <Directions />
-      <Contact />
-      
-      
-  </div>);
+  return (
+    <>
+      <Switch>
+         <Route exact path="/" component={LandingPage}/>
+         <Route path="/dashboard" component={Dashboard}/>
+         <Route path="/createPortfolio" component={Create}/>
+      </Switch>
+    </>
+  );
 }
 
 export default App;
