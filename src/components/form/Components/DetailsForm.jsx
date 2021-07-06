@@ -1,13 +1,14 @@
 import React ,{useState} from 'react'
 import './form.css'
-import {List} from '../SkillsTodo/List'
+import SkillForm from '../addSkill/addSkillForm';
 import ExperienceForm from '../addExp/addExpForm';
-import '../SkillsTodo/style.css'
+import ProjectForm from '../addProj/addProjForm';
+
 function DetailsForm(){
-
-
+    
 const [experiences, setExp] = useState([]);
-let ar=new Array();
+const [projects, setProj] = useState([]);
+const [skills, setSkill] = useState([]);
 
 return(
     <div className="maindiv">
@@ -25,8 +26,9 @@ return(
         <input></input><br></br><br></br>
 
        
-        <List ar={ar}/>
+        <SkillForm skills={skills} setSkill={setSkill}/>
         <ExperienceForm experiences={experiences} setExp={setExp}/>
+        <ProjectForm projects={projects} setProj={setProj}/>
          <button onClick={(e)=>{console.log(experiences);}}>show</button>
          
       
@@ -34,7 +36,7 @@ return(
             <textarea placeholder="enter something abount you!"></textarea>
             
             
-            <h2>Projects</h2>
+            
    
   
     </div>

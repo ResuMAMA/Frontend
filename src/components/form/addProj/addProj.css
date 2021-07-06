@@ -1,0 +1,67 @@
+.main_div {
+  
+  width: 50%;
+
+  height: 100vh;
+
+  background: #085f5f;
+  background-size: cover;
+  display: flex;
+
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+}
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+.createArea{
+    background-color: aliceblue;
+}
+
+.note {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    float: left;
+  }
+  .note h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+  }
+  .note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .note button {
+    background-color: #8566aa;
+    border-radius: 50%;
+    padding: 5px;
+    color: aliceblue;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+
+  .note button:hover{
+    background-color: transparent;
+   color: crimson;
+  box-shadow: 5px 5px 15px -5px rgba(255, 0, 0, 0.5);
+  }
