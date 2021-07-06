@@ -1,11 +1,14 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import './form.css'
 import {List} from '../SkillsTodo/List'
 import ExperienceForm from '../addExp/addExpForm';
 import '../SkillsTodo/style.css'
 function DetailsForm(){
-//console.log(ar);
+
+
+const [experiences, setExp] = useState([]);
 let ar=new Array();
+
 return(
     <div className="maindiv">
         
@@ -23,8 +26,8 @@ return(
 
        
         <List ar={ar}/>
-        <ExperienceForm />
-         
+        <ExperienceForm experiences={experiences} setExp={setExp}/>
+         <button onClick={(e)=>{console.log(experiences);}}>show</button>
          
       
             <h2>About</h2>

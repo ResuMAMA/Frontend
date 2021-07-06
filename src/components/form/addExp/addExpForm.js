@@ -3,13 +3,15 @@ import "./addExp.css";
 import Experience from "./experience";
 import CreateArea from "./createArea";
 
-function ExperienceForm() {
-  const [experiences, setExp] = useState([]);
+function ExperienceForm({experiences,setExp}) {
+ // const [experiences, setExp] = useState([]);
 
-  function addExp(newExp) {
-    setExp(prevExps => {
+  async function addExp(newExp) {
+   
+    await setExp(prevExps => {
       return [...prevExps, newExp];
     });
+   // console.log(experiences)
   }
 
   function deleteExp(id) {
