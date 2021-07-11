@@ -1,0 +1,91 @@
+
+.top
+{
+    background: black;
+}
+.intro
+{   
+    
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 500;
+    padding-top: 0.5em;
+    color: whitesmoke;
+}
+.containerNew
+{  
+    background: black;
+    text-align: center;
+     
+}   
+
+.containerNew div
+{
+  padding : 10px;
+}
+
+.boxNew
+{
+ flex: 1;
+ font-family: 'Big Shoulders Display', cursive;
+ color: #FF7600 ;
+}
+
+.boxNew
+{
+ flex: 1;
+ margin-top: 0;
+ font-family: 'Big Shoulders Display', cursive;
+ color: #FF7600 ;
+}
+
+/*container 2*/
+
+.containerNew2 div
+{
+  padding : 10px;
+}
+
+.containerNew2
+{  
+    background:black;
+    text-align: center;
+
+}   
+
+.boxNew2
+{
+    flex:1;
+    font-family: 'Big Shoulders Display', cursive;
+    color: #FF7600 ;
+}
+
+.boxNew2
+{
+    flex: 1;
+    font-family: 'Big Shoulders Display', cursive;
+    color: #FF7600 ;
+  
+}
+
+.bold
+{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.ic{
+   color : #F58634
+   
+}
+
+.ib
+{
+    padding: 0.3rem;
+}
+
+hr{
+    background-color: whitesmoke;
+    width:3em
+}

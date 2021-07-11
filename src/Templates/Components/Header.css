@@ -1,0 +1,98 @@
+@media(min-width : 468px)
+{
+    .container1
+    {  
+        display: flex;
+        background: linear-gradient(160deg, #FF7600, #FF7600 60%, #F58634 60%, #F58634);
+    }   
+    .container2
+    {  
+        display: flex;
+        background: linear-gradient(160deg, #FF7600, #FF7600 60%, #F58634 60%, #F58634);
+    }   
+   .colorclass
+   {
+    background: linear-gradient(160deg, #FF7600, #FF7600 60%, #F58634 60%, #F58634); 
+   }   
+}
+
+.container1
+{  
+    background: linear-gradient(160deg, #FF7600, #FF7600 60%, #F58634 60%, #F58634);
+    justify-content:space-around;
+    text-align: center;
+     
+}   
+
+.container1 div
+{
+  padding : 10px;
+}
+
+.box1
+{
+ flex: 1;
+}
+
+.box2
+{
+ flex: 1;
+ margin-top: 9em;
+ color: beige;
+ font-family: 'Big Shoulders Display', cursive;
+}
+.image
+{
+    border-radius: 100%;
+    margin-top: 9rem;
+    margin-bottom: 2rem;
+    height: 10rem;
+    margin-left: auto;
+}
+
+.name
+{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 500;
+}
+/*container 2*/
+
+.container2
+{  
+    background: linear-gradient(160deg, #FF7600, #FF7600 60%, #F58634 60%, #F58634);
+    justify-content:space-around;
+    text-align: center;
+}   
+
+.container2box1
+{
+    flex:1;
+    color: beige;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.container2box2
+{
+    flex: 1;
+    color: beige;
+    font-family: 'Big Shoulders Display', cursive;
+  
+}
+
+.container2box3
+{
+    flex: 1;
+    color: beige;
+    font-family: 'Big Shoulders Display', cursive;
+   
+}
+
+hr{
+    background-color: whitesmoke;
+    width: 3em;
+}
+
+.colorclass
+{
+    background: linear-gradient(160deg, #FF7600, #FF7600 60%, #F58634 60%, #F58634);
+}

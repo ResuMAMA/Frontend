@@ -1,0 +1,118 @@
+@media(min-width : 468px)
+{
+    .footer
+    {  
+        display: flex;
+        background: linear-gradient(160deg, #FF7600, #FF7600 60%, #F58634 60%, #F58634);
+    }   
+   
+      
+}
+
+.footertop
+{
+    background: linear-gradient(160deg, #FF7600, #FF7600 60%, #F58634 60%, #F58634);
+}
+.footer
+{  
+    background: linear-gradient(160deg, #FF7600, #FF7600 60%, #F58634 60%, #F58634);
+    justify-content:space-around;
+    text-align: center;
+    
+     
+}   
+.imp
+{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 500;
+    color: whitesmoke;
+    
+}
+
+.imp1
+{
+    color: black;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.imp3
+{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 500;
+    color: whitesmoke;
+    text-align: center;
+}
+.footer div
+{
+  padding : 10px;
+}
+
+.footerbox1
+{
+ flex: 1;
+ text-align: left;
+}
+
+.footerbox2
+{
+ flex: 1;
+ margin-top: 3rem;
+ font-family: 'Big Shoulders Display', cursive;
+}
+
+.myButton {
+	box-shadow: 3px 4px 8px 1px black;
+	background:linear-gradient(160deg, #FF7600, #FF7600 60%, #F58634 60%, #F58634);
+	background-color:linear-gradient(160deg, #FF7600, #FF7600 60%, #F58634 60%, #F58634);
+	border-radius:12px;
+	border:1px solid#FF7600;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:17px;
+	font-style:italic;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 0px 9px whitesmoke;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #FF7600 5%, #F58634 100%);
+	background-color:linear-gradient(160deg, #FF7600, #FF7600 60%, #F58634 60%, #F58634);;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+/*container 2
+
+.container2
+{  
+    background: linear-gradient(160deg, #FF7600, #FF7600 60%, #F58634 60%, #F58634);
+    justify-content:space-around;
+    text-align: center;
+}   
+
+.container2box1
+{
+    flex:1;
+    color: beige;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.container2box2
+{
+    flex: 1;
+    color: beige;
+    font-family: 'Big Shoulders Display', cursive;
+  
+}
+
+.container2box3
+{
+    flex: 1;
+    color: beige;
+    font-family: 'Big Shoulders Display', cursive;
+   
+}
+*/
