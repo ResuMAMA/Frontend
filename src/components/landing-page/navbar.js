@@ -10,9 +10,9 @@ $(document).ready(function() {
   $(window).scroll(function() {
     // checks if window is scrolled more than 500px, adds/removes solid class
     if($(this).scrollTop() > 500) { 
-        $('.navbar').addClass('solid');
+        $('.head-navbar').addClass('solid');
     } else {
-        $('.navbar').removeClass('solid');
+        $('.head-navbar').removeClass('solid');
     }
   });
 });
@@ -24,7 +24,7 @@ function callogin(){
 
 function Navbar() {
   return (
-    <div class="Head-div navbar">
+    <div class="Head-div head-navbar">
       <div class="main-div">
         <div class="logo-div">
         <div class="img-container">

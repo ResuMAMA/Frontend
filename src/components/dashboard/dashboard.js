@@ -1,40 +1,47 @@
 import React from "react";
 import "./dashboard.css";
-import { Navbar, Nav, NavDropdown} from "react-bootstrap";
+import LockOpenIcon from '@material-ui/icons/LockOpen';
+import ArrowDropDownRoundedIcon from '@material-ui/icons/ArrowDropDownRounded';
 
 function Dashboard(){
 return (
 <div class="dashb">
 
-<Navbar bg="dark" expand="lg" fixed='top'>
-  <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-  <Navbar.Toggle aria-controls="navbarScroll" />
-  <Navbar.Collapse id="navbarScroll">
-    <Nav
-      className="mr-auto my-2 my-lg-0"
-      style={{ maxHeight: '100px' }}
-      navbarScroll
-    >
-      <Nav.Link href="#action1">Home</Nav.Link>
-      <Nav.Link href="#action2">Link</Nav.Link>
-      <NavDropdown title="Link" id="navbarScrollingDropdown">
-        <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
-      </NavDropdown>
-      <Nav.Link href="#" disabled>
-        Link
-      </Nav.Link>
-    </Nav>
-  </Navbar.Collapse>
-</Navbar>
+<div class="dash-n-div">
+      <div class="main-n-div">
+        <div class="logo-div">
+        <div class="img-container">
+        <img class="logo-img" src="/img/white.png"></img>
+        </div>
+        
+        </div>
+          <div class="sec-n-div">
+            <ul class="d-nav-list">
+              <li class="d-nav-list-item">
+                <div class="d-nav-list-item-div">
+
+                <a> Home<ArrowDropDownRoundedIcon /></a>
+
+                </div>
+              </li>
+              
+              
+            </ul>
+         </div>
+        
+      </div>
+      <div class="sign-div">
+   
+        <div class="sign-content">
+        Sign-in
+        <LockOpenIcon />
+        </div>
+
+      </div>
+    </div>
 
 
-  {/* <header>
-      <h1>resuMAMA</h1>
-  </header> */}
-  <footer>
+  <footer class="dfoot">
       <p>Copyright ⓒ </p>
     </footer>
 </div>

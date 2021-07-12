@@ -1,24 +1,82 @@
 .dashb{
   width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: white;
+    color: black;
 }
-header {
-    background-color: #C4BFBF;
-    /* margin: auto -16px; */
-    /* padding: 16px 32px; */
-    width: 100%;
-    height: 3.5rem;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
+/* navbar */
+
+.dash-n-div{
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  /* color: white; */
+  color: black;
+  background-color: #C4BFBF;
   }
+
+.main-n-div{
+  display: flex;  
+  margin: 0 0 0 5%;
+  align-items: center;
+}
+
+.sec-n-div{
+  flex: 2;
   
-  header h1 {
-    color: #fff;
-    font-family: "McLaren", cursive;
-    font-weight: 200;
+}
+
+.d-nav-list{
+  display: flex;
+  list-style: none;
+  /* color: white; */
+  color: black;
+}
+.d-nav-list-item{
+  margin-right: 30px;
+}
+.d-nav-list-item:hover{
+  color: #000747;
+}
+/* .d-nav-list-content{
+  text-decoration: none;
+} */
+
+.d-nav-list-item-div{
+  display: flex;
   }
+
+
+  .sign-div{
+    margin-left: auto;
+    margin-right: 5%;
+   
+  }
+  .sign-content:hover{
+    background-color: #000747;
+    border-color: #000747;
   
-  footer {
+  }
+  .sign-content{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    width: 150px;
+    height: 50px;
+    border-radius: 100px;
+   align-items: center;
+   justify-content:  center;
+   /* color: white; */
+   cursor: pointer;
+  }
+
+/* footer */
+  .dfoot {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -32,6 +90,6 @@ header {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
   }
   
-  footer p {
+  .dfoot.p {
     color: #ccc;
   }
