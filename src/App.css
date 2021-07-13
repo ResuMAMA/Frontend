@@ -237,9 +237,6 @@ display: flex;
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
 
 section {
-  /* position: fixed; */
-  /* min-height: 100vh; */
-  /* background-color: #f8dd30; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,14 +406,11 @@ section .container.active .signinBx .imgBx {
   height: 100vh;
   z-index: 1;
   width: 0%;
-  /* height: 100%;
-  width: 0;
-  position: fixed; */
- display: flex;
- align-items: center;
- justify-content: center;
+   display: flex;
+  align-items: center;
+  justify-content: center;
   top: 0;
-   left: 0; 
+  left: 0; 
   background-color: rgb(255,255,255);
   background-color: rgba(255,255,255, 0.9);
   overflow-x: hidden;
