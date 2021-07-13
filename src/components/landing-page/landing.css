@@ -420,3 +420,7 @@ section .container.active .signinBx .imgBx {
 .active {
   border-bottom: 1px solid white;
 }
+
+/* button{
+  border-width: 0px;
+} */

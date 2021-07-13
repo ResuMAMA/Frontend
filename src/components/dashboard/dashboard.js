@@ -8,10 +8,9 @@ return (
 
     <div class="dash-n-div">
           <div class="main-n-div">
-
-            <div class="logo-div">
-              <div class="img-container">
-              <img class="logo-img" src="/img/b-r.png"></img>
+            <div class="dash-logo-div">
+              <div class="dash-img-container">
+              <img class="dash-logo-img" src="/img/b-r.png"></img>
               </div>
             </div>
 
@@ -21,7 +20,7 @@ return (
               <div class="d-nav-list">
                 <li class="d-nav-list-item">
                   <div class="d-nav-list-item-div">
-                    <p class="writtendash">Dashboard</p>
+                    <span class="writtendash">Dashboard</span>
                   </div>
                 </li>
               </div>
