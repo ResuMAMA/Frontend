@@ -8,7 +8,7 @@ function Skill(props) {
 
   return (
     <div className="note">
-      <h1>{props.skill}</h1>
+      <h1 class="formh1">{props.skill}</h1>
       <button onClick={handleClick}><DeleteIcon className="deleteIcon" /></button>
     </div>
   );

@@ -18,20 +18,20 @@ return (
           <div class="line"></div>
 
           <div class="sec-n-div">
-              <ul class="d-nav-list">
+              <div class="d-nav-list">
                 <li class="d-nav-list-item">
                   <div class="d-nav-list-item-div">
-                    <a class="writtendash">Dashboard</a>
+                    <p class="writtendash">Dashboard</p>
                   </div>
                 </li>
-              </ul>
+              </div>
           </div>
             
           </div>
           
-          <div class="sign-div">
-            <div class="sign-container">
-              <button class="sign-btn">
+          <div class="d-sign-div">
+            <div class="d-sign-container">
+              <button class="d-sign-btn">
                 <i class="material-icons"><AccountCircleIcon className="accnt"/></i>
                 <span>Account Settings</span>
                 <ul class="dropdown">
