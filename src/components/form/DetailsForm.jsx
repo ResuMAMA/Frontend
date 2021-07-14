@@ -1,14 +1,20 @@
-import React ,{useState, useEffect} from 'react'
-import './form.css'
-import SkillForm from '../addSkill/addSkillForm';
-import ExperienceForm from '../addExp/addExpForm';
-import ProjectForm from '../addProj/addProjForm';
-import Validate from '../../../Validate'
+import React ,{useState, useEffect} from 'react';
+import './form.css';
+import SkillForm from '../form/addSkill/addSkillForm';
+import ExperienceForm from '../form/addExp/addExpForm';
+import ProjectForm from '../form/addProj/addProjForm';
+// import Validate from '../../../Validate';
 function DetailsForm(){
 
+<<<<<<< HEAD:src/components/form/Components/DetailsForm.jsx
 useEffect(()=>{
      Validate();
 },[])
+=======
+// useEffect(()=>{
+//      Validate();
+// })
+>>>>>>> c51f2c54d4bc890c63dc69315b5c3a9145c34647:src/components/form/DetailsForm.jsx
 
 
 const [name,setName]=useState("");
@@ -56,8 +62,8 @@ body:JSON.stringify(
 }
 
 return(
-    <div className="maindiv">
-        <h2>Basic Details</h2>
+    <div class="formdiv">
+        <h2 class="formh2">Basic Details</h2>
         <label>Name</label>
         <input onChange={(e)=>setName(e.target.value)}></input><br></br><br></br>
 

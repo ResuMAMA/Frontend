@@ -22,7 +22,7 @@ function ProjectForm({projects,setProj}) {
 
   return (
     <div>
-      <h1>Add Project</h1>
+      <h1 class="formh1">Add Project</h1>
        
       <div className="main_div">
         

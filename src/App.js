@@ -1,11 +1,11 @@
 import React from 'react';
-import "./App.css";
 import { Route,Switch} from "react-router-dom";
-import LandingPage from './components/landingPage';
+import LandingPage from './components/landing-page/landingPage';
 import Dashboard from './components/dashboard/dashboard';
 import Create from './components/createPortfolio/create';
-import Schema from './components/form/Components/DetailsForm'
-import temp from './Templates/Template'
+import Schema from './components/form/DetailsForm';
+import temp from './components/Templates/Template';
+
 function App() {
 
   return (
