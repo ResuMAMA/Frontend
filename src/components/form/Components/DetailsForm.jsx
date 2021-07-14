@@ -8,7 +8,7 @@ function DetailsForm(){
 
 useEffect(()=>{
      Validate();
-})
+},[])
 
 
 const [name,setName]=useState("");
