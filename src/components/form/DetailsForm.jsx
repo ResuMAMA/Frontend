@@ -3,18 +3,11 @@ import './form.css';
 import SkillForm from '../form/addSkill/addSkillForm';
 import ExperienceForm from '../form/addExp/addExpForm';
 import ProjectForm from '../form/addProj/addProjForm';
-// import Validate from '../../../Validate';
+import Validate from '../../Validate';
 function DetailsForm(){
-
-<<<<<<< HEAD:src/components/form/Components/DetailsForm.jsx
 useEffect(()=>{
      Validate();
-},[])
-=======
-// useEffect(()=>{
-//      Validate();
-// })
->>>>>>> c51f2c54d4bc890c63dc69315b5c3a9145c34647:src/components/form/DetailsForm.jsx
+     },[])
 
 
 const [name,setName]=useState("");
@@ -48,12 +41,12 @@ async function handleSubmit(){
        projects:projects
 
    }
-   const response=await fetch("http://localhost:8080/portfolios/create_new",{
+   const response=await fetch("http://localhost:5000/portfolios/create_new",{
     method:"POST",
     headers:{
     "Content-Type":"application/json",
-    "authorization":`Bearer ${token}`
-   },
+    "Authorization":`Bearer ${token}`
+    },
 body:JSON.stringify(
     portfolio
     )

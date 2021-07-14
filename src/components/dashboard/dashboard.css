@@ -145,6 +145,7 @@ width: 214px;
     opacity: 0;
     visibility: hidden;
     transition: 0.3s ease;
+   
   }
   .dropdown:before {
     content: "";
