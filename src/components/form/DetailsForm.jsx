@@ -20,7 +20,7 @@ const [experiences, setExp] = useState([]);
 const [projects, setProj] = useState([]);
 const [skills, setSkill] = useState([]);
 
-const user_id=localStorage.getItem("userId");
+const user_id=localStorage.getItem("userid");
 const token=localStorage.getItem("token");
 
 async function handleSubmit(){
