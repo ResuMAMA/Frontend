@@ -144,6 +144,7 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.3s ease;
+   
   }
   .accnt-btn .dropdown:before {
     content: "";
