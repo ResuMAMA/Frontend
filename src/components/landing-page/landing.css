@@ -168,7 +168,7 @@ display: flex;
  
 }
 .contact-div{
-  height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -192,6 +192,84 @@ display: flex;
   right: 850px;
   
 }
+/*styling for footer*/
+
+.footer_intro
+{
+  background: linear-gradient(-45deg,#5A5EB2,#2D1254,#2940d3 ,#D5FBFF);
+  /* background: linear-gradient(-45deg, #e73c7e, #2b1150, #23a6d5,#2940d3, #2940d3); */
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  width: 100%;
+}
+
+.footer_main
+{    display: flex;
+    
+    justify-content:space-around;
+    text-align: center;
+}   
+
+.footer_mainbox1
+{
+    flex:1;
+    color: beige;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.footer_mainbox2
+{
+    flex: 1;
+    color: beige;
+    font-family: 'Big Shoulders Display', cursive;
+  
+}
+
+.footer_mainbox3
+{
+    flex: 1;
+    color: beige;
+    font-family: 'Big Shoulders Display', cursive;
+   
+}
+
+.footer_mainhr{
+    background-color: teal;
+    width: 3em;
+    align-content: center;
+}
+
+.footer_down
+{
+  color: beige;
+  font-family: 'Big Shoulders Display', cursive;
+}
+.ib{
+  padding: 0.3em;
+}
+
+.ie {
+  color: #DBE6FD;
+}
+
+.linked
+{
+  color :#21209C;
+}
+.twitter
+{
+  color: #CADEFC;
+}
+.insta
+{
+  color : #A73489;
+}
+.facebook
+{
+  color: #04009A;
+}
+
+/*footer css ends here*/
 .response-main{
   width: 100%;
   height: 100vh;
