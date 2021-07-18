@@ -1,95 +1,388 @@
-.dashb{
-  width: 100%;
-    height: 100vh;
-    background-color: white;
-    color: black;
-}
 
-/* navbar */
+  .chnglogo{
+    display: none;
+  }
+  @media(max-width:600px){
+    .dash-logo-img{
+      display: none;
+    }
+    .chnglogo{
+      display: block;
+    }
 
-.dash-n-div{
-  position: fixed;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 400;
-  /* color: white; */
-  color: black;
-  background-color: #C4BFBF;
   }
 
-.main-n-div{
-  display: flex;  
-  margin: 0 0 0 5%;
-  align-items: center;
-}
+  @media(max-width:460px){
 
-.sec-n-div{
-  flex: 2;
+    .dash-name {
+      font-size: 0.6rem;
+    }
+    .accnt-div{
+      transform: scale(0.9);
+    }
+  }
   
-}
+  .dash-main{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    
+  }
+   
+  /* ----------------------------------------------------Navbar---------------------------------------------------- */
 
-.d-nav-list{
-  display: flex;
-  list-style: none;
-  /* color: white; */
-  color: black;
-}
-.d-nav-list-item{
-  margin-right: 30px;
-}
-.d-nav-list-item:hover{
-  color: #000747;
-}
-/* .d-nav-list-content{
-  text-decoration: none;
-} */
+  .dash-nav-out{
+    
+   }
 
-.d-nav-list-item-div{
-  display: flex;
+  .dash-nav-in{
+    height: 50px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    display: flex;
   }
 
+         /* --------------------------------------------logo---------------------------------- */
 
-  .sign-div{
-    margin-left: auto;
+   .LOGO{
+     width: 10%;
+     display: flex;
+     align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 20px;
+    }
+
+  .dash-logo-img{
+   max-width: 100px;
+  }
+
+          /* --------------------------------------------Dashboard heading---------------------------------- */
+
+  .dash-name-div{
+    width: 100%;
+    display: flex;
+    padding: 6px;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .dash-name{
+    border: 1px solid #cecdcd;
+    border-radius: 40px;
+    height: 38px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+    transition: all .5s ease;
+    color: rgb(36, 36, 36);
+    /* font-size: 0.9rem; */
+  }
+  
+   /* --------------------------------------------------------account settings------------------------------------------------------- */
+   
+   @media(max-width:370px){
+    .accnt-setting{
+      display: none;
+    }
+    .accnt-btn{
+      justify-content: center;
+    }
+  }
+  
+  .accnt-div{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     margin-right: 5%;
+  }
+
+  .accnt-btn {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    background: #2940D3;
+    border: 0;
+    border-radius: 40px;
+    height: 38px;
+    width: 100%;
+    width: 240px;
+    box-sizing: border-box;
+    padding: 16px 16px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .accnt-btn:focus .dropdown, .accnt-btn:active .dropdown {
+    transform: translate(0, 20px);
+    opacity: 1;
+    visibility: visible;
+  }
+  .accnt-btn .material-icons {
+    border: 0;
+    border-radius: 100%;
+    transform: scale(0.8);
+    animation: ripple 0.6s linear infinite;
+    margin-right: 2%;
+  }
+  .accnt-btn .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #FFFFFF;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
    
   }
-  .sign-content:hover{
-    background-color: #000747;
-    border-color: #000747;
-  
-  }
-  .sign-content{
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid;
-    width: 150px;
-    height: 50px;
-    border-radius: 100px;
-   align-items: center;
-   justify-content:  center;
-   /* color: white; */
-   cursor: pointer;
+  .accnt-btn .dropdown:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    box-shadow: 2px -2px 6px rgba(0, 0, 0, 0.05);
+    border-top: 6px solid #FFFFFF;
+    border-right: 6px solid #FFFFFF;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid transparent;
+    transform: rotate(-45deg);
+    mix-blend-mode: multiple;
   }
 
-/* footer */
-  .dfoot {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    height: 5.5rem;
-    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-    background-color: #004AAD;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  .dropdown ul{
+    list-style: none;
+  }
+  .accnt-btn .dropdown li {
+    list-style: none;
+    z-index: 1;
+    position: relative;
+    background: #FFFFFF;
+    padding: 0 20px;
+    color: #666;
+  }
+  .accnt-btn .dropdown li.active {
+    color: #5380F7;
+  }
+  .accnt-btn .dropdown li:first-child {
+    border-radius: 4px 4px 0 0;
+  }
+  .accnt-btn .dropdown li:last-child {
+    border-radius: 0 0 4px 4px;
+  }
+  .accnt-btn .dropdown li:last-child a {
+    border-bottom: 0;
+  }
+  .accnt-btn .dropdown a {
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 16px 0;
+    color: inherit;
+    font-size: 10px;
+    text-decoration: none;
+  }
+
+  .accnt{
+    transition: all .5s ease;
   }
   
-  .dfoot.p {
-    color: #ccc;
+  @-webkit-keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
   }
+  
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+  }
+
+
+  /* ----------------------------------------------------center div---------------------------------------------------------------- */
+
+  .dash-center-out{
+    flex: 18;
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+    margin-top: 15px;
+    width: 100%;
+  }
+   
+  .dash-center-in{
+    padding: 8px;
+    height: 100%;
+    width:75%;
+    display: flex;
+   
+  }
+
+
+  @media(max-width:315px){
+    .temp-cards{
+      padding: 0;
+    }
+  }
+
+  @media (max-width:459px) {
+    .temp-cards{
+      display: flex;
+    justify-content: center;
+    }
+    .dash-center-in{
+      flex-direction: column;
+    }
+    .quotes{
+      margin-top: 8px;
+    }
+  }
+
+  @media(min-width:900px){
+    .quotes{
+      margin-left: 8px;
+      height: 400px;
+    }
+  }
+  @media(max-width:900px){
+    .dash-center-in{
+      flex-direction: column;
+    }
+    .quotes{
+      margin-top: 8px;
+    }
+
+  }
+  @media screen and (min-width: 460px) and (max-width: 820px) {
+    .dash-center-in{
+      width:100%;
+   }
+  }
+  
+  @media screen and (min-width: 900px) and (max-width: 1118px) {
+    .dash-center-in{
+      width:100%;
+   }
+  }
+
+  .quotes{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    background-color: #FCD8D4;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+  }
+
+
+  .temp-cards{
+    flex: 4;
+    height: 100%;
+    padding: 20px ;
+    background-color: #f7f4f4;
+    
+  }
+
+   /* ----------------------------------------------------Template cards---------------------------------------------------------------- */
+
+
+   .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 60px;
+    align-items: stretch;
+    
+  }
+  
+  .grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: white;
+    transition: .5s;
+    text-align: center;
+   }
+
+  .grid article:hover{
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.4);
+    transform: scale(1.05,1.05);
+  }
+  
+  .grid > article img {
+    max-width: 100%;
+    border-radius:5px 5px 0 0;
+    
+  }
+  
+  .grid .text {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+  }
+   
+  .text > p{
+    font-size: 0.9rem;
+    margin: 8px;
+  }
+
+  .bottom-bar{
+    background-color: #2940D3;
+    max-height: 30px;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0 0 0;
+  }
+
+  .bottom-bar-icon{
+    color: white;
+    transform: scale(0.6);
+  }
+  .bottom-bar-icon:hover{
+    color: rgb(37, 218, 37);
+  }
+   .createCard .bottom-bar{
+     margin-bottom: 5px;
+   }
+
+  /* ----------------------------------------------------footer---------------------------------------------------------------- */
+  .dash-foot{
+    height: 50px;
+    margin-top: auto;
+    width: 100%;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    background-color: #2940D3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+

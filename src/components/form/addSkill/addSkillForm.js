@@ -22,7 +22,7 @@ function SkillForm({skills,setSkill}) {
 
   return (
     <div>
-      <h1>Add Skills</h1>
+      <h1 class="formh1">Add Skills</h1>
        
       <div className="main_div">
         

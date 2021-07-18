@@ -1,14 +1,13 @@
-import React ,{useState, useEffect} from 'react'
-import './form.css'
-import SkillForm from '../addSkill/addSkillForm';
-import ExperienceForm from '../addExp/addExpForm';
-import ProjectForm from '../addProj/addProjForm';
-import Validate from '../../../Validate'
+import React ,{useState, useEffect} from 'react';
+import './form.css';
+import SkillForm from '../form/addSkill/addSkillForm';
+import ExperienceForm from '../form/addExp/addExpForm';
+import ProjectForm from '../form/addProj/addProjForm';
+import Validate from '../../Validate';
 function DetailsForm(){
-
 useEffect(()=>{
      Validate();
-})
+     },[])
 
 
 const [name,setName]=useState("");
@@ -21,7 +20,7 @@ const [experiences, setExp] = useState([]);
 const [projects, setProj] = useState([]);
 const [skills, setSkill] = useState([]);
 
-const user_id=localStorage.getItem("userId");
+const user_id=localStorage.getItem("userid");
 const token=localStorage.getItem("token");
 
 async function handleSubmit(){
@@ -42,12 +41,12 @@ async function handleSubmit(){
        projects:projects
 
    }
-   const response=await fetch("http://localhost:8080/portfolios/create_new",{
+   const response=await fetch("http://localhost:5000/portfolios/create_new",{
     method:"POST",
     headers:{
     "Content-Type":"application/json",
-    "authorization":`Bearer ${token}`
-   },
+    "Authorization":`Bearer ${token}`
+    },
 body:JSON.stringify(
     portfolio
     )
@@ -56,8 +55,8 @@ body:JSON.stringify(
 }
 
 return(
-    <div className="maindiv">
-        <h2>Basic Details</h2>
+    <div class="formdiv">
+        <h2 class="formh2">Basic Details</h2>
         <label>Name</label>
         <input onChange={(e)=>setName(e.target.value)}></input><br></br><br></br>
 

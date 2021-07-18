@@ -32,7 +32,7 @@ function Login() {
 
     e.preventDefault();
     //console.log(username+" "+email+" "+password)
-      const response = await fetch(`https://localhost:8080/auth/register/`,{
+      const response = await fetch(`http://localhost:5000/auth/register/`,{
               method:"POST",
           headers:{
               "Content-Type":"application/json"
@@ -58,7 +58,7 @@ function Login() {
   async function loginuser(e){
     e.preventDefault();
    // console.log(loginEmail+" "+loginPass)
-    const response = await fetch(`https://localhost:8080/auth/login/`,{
+    const response = await fetch(`http://localhost:5000/auth/login/`,{
               method:"POST",
           headers:{
               "Content-Type":"application/json"

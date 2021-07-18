@@ -8,7 +8,7 @@ function Project(props) {
 
   return (
     <div className="note">
-      <h1>{props.title}</h1>
+      <h1 class="formh1">{props.title}</h1>
       <p>{props.desc}</p>
       <p>{props.img}</p>
       <button onClick={handleClick}><DeleteIcon className="deleteIcon" /></button>

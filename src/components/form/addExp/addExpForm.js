@@ -24,7 +24,7 @@ function ExperienceForm({experiences,setExp}) {
 
   return (
     <div>
-      <h1>Add Experience</h1>
+      <h1 class="formh1">Add Experience</h1>
        
       <div className="main_div">
         
