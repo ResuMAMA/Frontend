@@ -55,6 +55,8 @@ html, body{
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
   color: white;
+  overflow: hidden;
+  z-index: 20;
   }
 .main-div{
   display: flex;
@@ -172,6 +174,7 @@ display: flex;
   border-radius: 10px;
   cursor: pointer;
  background-color: #2940d3;
+ 
 }
 .contact-div{
   height: 100vh;
