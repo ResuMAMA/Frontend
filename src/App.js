@@ -5,6 +5,7 @@ import Dashboard from './components/dashboard/dashboard';
 import Create from './components/createPortfolio/create';
 import Schema from './components/form/DetailsForm';
 import temp from './components/Templates/Template';
+import Template1 from './components/ntemplates/template2/template2';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
          <Route path="/createPortfolio" component={Create}/>
          <Route path="/form" component={Schema}/>
          <Route path="/tem" component={temp}/>
+         <Route path="/Template1" component={Template1}/>
       </Switch>
     
   );

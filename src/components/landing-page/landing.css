@@ -82,9 +82,9 @@ a{
 .nav-list-content{
   text-decoration: none;
 }
-a:visited{
+/* a:visited{
   color: white;
-}
+} */
 
 .logo-div{
   flex: 1;

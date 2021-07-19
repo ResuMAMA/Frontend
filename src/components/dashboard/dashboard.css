@@ -307,8 +307,7 @@
   }
 
    /* ----------------------------------------------------Template cards---------------------------------------------------------------- */
-
-
+   
    .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -373,7 +372,7 @@
 
   /* ----------------------------------------------------footer---------------------------------------------------------------- */
   .dash-foot{
-    height: 50px;
+    min-height: 100px;
     margin-top: auto;
     width: 100%;
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
