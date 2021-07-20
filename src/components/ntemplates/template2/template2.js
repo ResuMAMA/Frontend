@@ -8,6 +8,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import $ from "jquery";
 
 function Template1(){
+      
+    const arr=[{Title:"first",Des:"jhdgjghjghg"},{Title:"second",Des:"jhdgjghjghg"},{Title:"third",Des:"jhdgjghjghg"},{Title:"fourth",Des:"jhdgjghjghg"}]
 
     function phoneview(){                             //for navbar
     console.log("sdsjfhjf");
@@ -121,13 +123,18 @@ function Template1(){
                     <div class="container">
 
    
-                        <div class="timeline-block timeline-block-right">
+                    {
+                    arr.map((item,index)=>{                     
+                         return(
+                        <div class={`timeline-block timeline-block-${index%2==0?`right`:`left`}`}>
                             <div class="marker"></div>
                             <div class="timeline-content">
-                                <h3>First Year</h3>
+                         <h3>{item.Title}</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
                             </div>
-                        </div>
+                        </div>)
+                    
+                   })}   
 
                         {/* <div class="timeline-block timeline-block-left">
                             <div class="marker"></div>
