@@ -10,8 +10,8 @@ import $ from "jquery";
 function Template1(){
 
     function phoneview(){                             //for navbar
-    // console.log("sdsjfhjf");
-    // $('.Temp1navItem').toggleClass("show");
+    console.log("sdsjfhjf");
+    $('.Temp1navItem').toggleClass("show");
     }
 
     return (
@@ -129,7 +129,7 @@ function Template1(){
                             </div>
                         </div>
 
-                        <div class="timeline-block timeline-block-left">
+                        {/* <div class="timeline-block timeline-block-left">
                             <div class="marker"></div>
                             <div class="timeline-content">
                                 <h3>Seconed Year</h3>
@@ -160,8 +160,8 @@ function Template1(){
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
                             </div>
                         </div>
+                        </div> */}
                         </div>
-                 
                 </div>
                 </div>
 
