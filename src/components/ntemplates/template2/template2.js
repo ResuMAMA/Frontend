@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import "./template2.css";
 import PhoneIcon from '@material-ui/icons/Phone';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -15,6 +15,26 @@ function Template1(){
     console.log("sdsjfhjf");
     $('.Temp1navItem').toggleClass("show");
     }
+    //states
+    let data={};
+    const id="60c4f510f975641cb4ab4866"; //to be fetched from url..
+    useEffect(()=>{
+        async function fetchData(){
+        const response=await fetch("http://localhost:5000/portfolios/portfolio.me",{
+            method:"GET",
+            headers:{
+            "Content-Type":"application/json",
+            "portfolio_id":id
+         }
+        })
+        data=await response.json();
+        console.log(data) 
+
+     }
+    fetchData();
+    
+       
+    },[])
 
     return (
         <div class="temp1outer">
