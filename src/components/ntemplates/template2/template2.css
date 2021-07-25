@@ -15,7 +15,7 @@
 
 .temp1head{
     
-    min-height: 80vh;
+    min-height: 700px;
     background-color: #121212;
 }
 
@@ -88,6 +88,7 @@
 
 .show {
   display: block;
+  /* position: fixed; */
 }
 
 .temp1nav{
@@ -390,7 +391,7 @@
   align-items: center;
   font-size: 1.3rem;
   font-family: 'Montserrat', sans-serif;
-  /* font-family: 'Belleza', sans-serif; */
+ 
 }
 
 .Grid-div{
@@ -408,6 +409,13 @@
   background-color: #F1F2F6;
   padding: 30px;
   transition: all 0.8s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+ 
  }
 
 .Grid-item {
@@ -439,14 +447,7 @@
    }
 
   @media(max-width:420px){
-    .Grid{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      /* flex-direction: column; */
-    }
-    .Grid-item {
+     .Grid-item {
       height: 90px;
       width: 90px;
      }
@@ -460,7 +461,7 @@
 
 .temp1proj{
     
-    height: 100vh;
+    min-height: 500px;
     background-color: #121212;
 }
 
@@ -484,11 +485,99 @@
   /* font-family: 'Belleza', sans-serif; */
 }
 
+.proj-Grid-div{
+  width: 100%;
+  height: 100%;
+  padding: 120px 30px;
+  transition: all 0.8s ease;
+}
+
+.proj-Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 60px;
+  text-align:center;
+  /* background-color: #F1F2F6; */
+  padding: 30px;
+  transition: all 0.8s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all 0.8s ease;
+ 
+ }
+
+.proj-card {
+  background-color: #fff;
+  max-width: 700px;
+  min-height: 300px;
+  /* box-shadow: 2px 2px 5px #dddde0, -1px -1px 5px #dddde0; */
+  border-radius: 10px;
+  display: grid;
+  grid-template-column: repeat(5, 1fr);
+  transition: all 0.8s ease;
+}
+.proj-card-img-container {
+  width: 280px;
+  height: 100%;
+  grid-column: 2;
+  background-color: #c1b7b4;
+  background-image: url('https://www.dropbox.com/s/7d5qt5wb2xpqeww/city-street.jpg?raw=1');
+  background-size: cover;
+  background-position: center center;
+  
+}
+
+.proj-card-content {
+  grid-column: 3/5;
+  padding: 10px 30px;
+  border-left: 1px solid #ccc;
+  
+}
+
+.proj-card-content h1 {
+  margin-bottom: 0;
+  margin-top: 20px;
+  color: #2A32DF;
+}
+
+.proj-excerpt{
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width:900px) {
+  .proj-card {
+    display: block;
+  }
+  .proj-card-img-container {
+    height: 250px;
+    width: 100%;
+  }
+  .proj-card-content {
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+}
+
+@media only screen and (max-width:470px) {
+  .proj-Grid{
+    grid-gap: 30px;
+  }
+  .proj-card-content {
+    transform: scale(0.9);
+    padding: 10px;
+  }
+}
+
+
 /* ------------------------------------------------------------Experience----------------------------------------------------- */
 
 .temp1experience{
     
-    min-height: 800px;
+    min-height: 500px;
     background-color: white;
 }
 

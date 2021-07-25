@@ -100,6 +100,7 @@ function Template1(){
                     <div class="Grid-item">
                         <h1>Soniaa</h1>
                     </div>
+                    
                     </div>
                     </div>
                  </div>
@@ -110,6 +111,69 @@ function Template1(){
         
                 <div class="projdiv">
                 <div class="projtag">Projects</div> 
+                      
+
+                <div class="proj-Grid-div">
+                <div class="proj-Grid">
+                                    <div class="proj-card">
+                        <div class="proj-card-img-container">
+                        
+                        </div>
+                        <div class="proj-card-content">
+                        
+                        <h1>From the Other Side of the World</h1>
+                        <p class="proj-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odio dolorem amet, sunt magnam asperiores exercitationem consequuntur? Molestias asperiores rerum doloremque reiciendis.Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                        
+                        </div>
+                    </div>
+                    <div class="proj-card">
+                    <div class="proj-card-img-container">
+                    
+                    </div>
+                    <div class="proj-card-content">
+                    
+                    <h1>From the Other Side of the World</h1>
+                    <p class="proj-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odio dolorem amet, sunt magnam asperiores exercitationem consequuntur? Molestias asperiores rerum doloremque reiciendis.Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                    
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-card-img-container">
+                    
+                    </div>
+                    <div class="proj-card-content">
+                    
+                    <h1>From the Other Side of the World</h1>
+                    <p class="proj-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odio dolorem amet, sunt magnam asperiores exercitationem consequuntur? Molestias asperiores rerum doloremque reiciendis.Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                    
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-card-img-container">
+                    
+                    </div>
+                    <div class="proj-card-content">
+                    
+                    <h1>From the Other Side of the World</h1>
+                    <p class="proj-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odio dolorem amet, sunt magnam asperiores exercitationem consequuntur? Molestias asperiores rerum doloremque reiciendis.Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                    
+                    </div>
+                </div>
+                <div class="proj-card">
+                    <div class="proj-card-img-container">
+                    
+                    </div>
+                    <div class="proj-card-content">
+                    
+                    <h1>From the Other Side of the World</h1>
+                    <p class="proj-excerpt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odio dolorem amet, sunt magnam asperiores exercitationem consequuntur? Molestias asperiores rerum doloremque reiciendis.Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                    
+                    </div>
+                </div>
+                    
+                    </div>
+                    </div>
+
 
 
                  </div>
