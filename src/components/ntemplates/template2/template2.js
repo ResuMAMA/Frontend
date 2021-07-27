@@ -32,11 +32,11 @@ function Template1(){
         const realdata=await response.json();
         console.log(realdata[0])
         setData(realdata[0])
-        if(data!==null)
+        if(data!==null){
         setTimeout(()=>{
         setLoad(false)
         },1000)
-       
+    }
 
      }
     fetchData();

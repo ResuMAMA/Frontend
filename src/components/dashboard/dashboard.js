@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useEffect,useState}from "react";
 import "./dashboard.css";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
@@ -6,8 +6,36 @@ import AddToPhotosIcon from '@material-ui/icons/AddToPhotos';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import ShareIcon from '@material-ui/icons/Share';
 import EditIcon from '@material-ui/icons/Edit';
+import Validate from '../../Validate'
+
 
 function Dashboard(){
+
+//logic---> fetch all the portfolios of the loggedIn user
+   const[data,setData]=useState();
+useEffect(()=>{
+    Validate();
+    const user_id=localStorage.getItem("userid");
+    const token=localStorage.getItem("token")
+    async function fetchData(){
+      const response=await fetch("http://localhost:5000/portfolios/myportfolios",{
+          method:"GET",
+          headers:{
+          "Content-Type":"application/json",
+          "Authorization":`Bearer ${token}`,
+          "user_id":user_id
+       }
+      })
+      console.log(response)
+      const realdata=await response.json();
+      console.log(realdata)
+     
+  }
+fetchData();
+
+
+},[])
+
   return (
   <div class="dash-main">
     <div class="dash-nav-out">
