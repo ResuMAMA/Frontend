@@ -9,7 +9,7 @@ import $ from "jquery";
 
 function Template1(){
       
-    const arr=[{Title:"first",Des:"jhdgjghjghg"},{Title:"second",Des:"jhdgjghjghg"},{Title:"third",Des:"jhdgjghjghg"},{Title:"fourth",Des:"jhdgjghjghg"}]
+    
 
     function phoneview(){                             //for navbar
     console.log("sdsjfhjf");
@@ -75,7 +75,7 @@ function Template1(){
                     <div class="lwhitesquare"></div>
                     <div class="greensquare"></div>
                     <div class="imgholder">
-                     <img src="/img/sonia.jpg" />
+                     <img src="https://drive.google.com/uc?export=view&id=1SKXpCCo4OANHOlBcXNJyyPuLcNRQGIWq" />
                     </div>
                   </div>
                 </div>

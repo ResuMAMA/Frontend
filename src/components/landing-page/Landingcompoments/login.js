@@ -47,9 +47,12 @@ function Login() {
   if(response.status==200){  
   const data = await response.json();
   console.log(data);
+    alert("Register successful, please SignIn to continue")
   }
   else {
-    console.log("error");
+    //console.log("error");
+    alert("Register unsuccessful");
+    
   }
         
   }
@@ -70,14 +73,17 @@ function Login() {
           });
   if(response.status==200){  
   const Data = await response.json();
-  console.log(Data);
+  //console.log(Data);
   const realData = Data.data;
   window.localStorage.setItem ("token",realData.token);
   window.localStorage.setItem ("userid",realData.id);
-  console.log(window.localStorage.getItem("token"));
+  //console.log(window.localStorage.getItem("token"));
+  window.location="/dashboard/dashboard"
+
   }
   else {
       console.log("error");
+      alert("Login unsuccessful, please try again")
   }        
   }
   
