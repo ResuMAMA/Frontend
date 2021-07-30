@@ -10,6 +10,8 @@ import Directions from "../landing-page/Landingcompoments/directions";
 import Login from "../landing-page/Landingcompoments/login";
 
 function LandingPage() {
+
+  
   return (<div>
        <Navbar />
        <Login />
