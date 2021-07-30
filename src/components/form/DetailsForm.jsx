@@ -57,7 +57,13 @@ body:JSON.stringify(
     portfolio
     )
 })
-   console.log(response)   
+   console.log(response)
+   if(response.status==200){
+     window.location="/dashboard/dashboard"
+   }
+   else{
+     alert("Portfolio not created")
+   }   
 }
 
 return(

@@ -17,7 +17,7 @@ function App() {
          <Route path="/createPortfolio" component={Create}/>
          <Route path="/form" component={Schema}/>
        
-         <Route path="/Template1" component={Template1}/>
+         <Route path="/Template1/my_portfolio/6104051bf7d8a266188115c1" component={Template1}/>
       </Switch>
     
   );

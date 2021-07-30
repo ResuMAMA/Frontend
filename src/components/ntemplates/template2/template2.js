@@ -18,8 +18,11 @@ function Template1(){
     //states
     const[load,setLoad]=useState(true)
     const [data,setData]=useState();
-    const id="6104051bf7d8a266188115c1"; //to be fetched from url..
+     //to be fetched from url..
     useEffect(()=>{
+        const id=document.URL.split("/")[5];
+        //console.log(url)
+       
         async function fetchData(){
         const response=await fetch("http://localhost:5000/portfolios/portfolio.me",{
             method:"GET",
@@ -109,7 +112,7 @@ function Template1(){
                 <div className="proj-Grid">
                     {data.projects.map((item,index)=>
                                     <div className="proj-card">
-                        <div className="proj-card-img-container">
+                        <div style={{backgroundImage: `url("https://drive.google.com/uc?export=view&id=1SKXpCCo4OANHOlBcXNJyyPuLcNRQGIWq")`}} className="proj-card-img-container">
                         
                         </div>
                         <div className="proj-card-content">
