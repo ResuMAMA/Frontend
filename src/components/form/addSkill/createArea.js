@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AddIcon from "@material-ui/icons/Add";
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 function CreateArea(props) {
   const [skill, setSkill] = useState("");
 
@@ -16,17 +16,16 @@ function CreateArea(props) {
   }
 
   return (
-    <div class="createArea">
+    <div class="skillcreateArea">
       <form>
         <input
           name="skill"
           onChange={handleChange}
           value={skill}
-          placeholder="Skill"
+          placeholder="Add Skills....."
         />
-        <button className="newBtn" onClick={submitSkill}><AddIcon /></button>
-        {/* <button onClick={submitExp}><AddIcon /></button> */}
-      </form>
+        <AddCircleIcon className="skilladdicon" onClick={submitSkill}/>
+       </form>
     </div>
   );
 }

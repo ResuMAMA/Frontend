@@ -39,7 +39,7 @@ function Template1(){
     }
 
      }
-    fetchData();
+    // fetchData();
     
        
     },[])
@@ -114,11 +114,12 @@ function Template1(){
                         </div>
                         <div className="proj-card-content">
                         
-                    <h1>{item.title}</h1>
+                         <h1>{item.title}</h1>
                         <p className="proj-excerpt">{item.description}</p>
                         
                         </div>
-                    </div>)}
+                    </div>
+                    )}
                    
                     
                     </div>

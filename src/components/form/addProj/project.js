@@ -1,19 +1,28 @@
 import React from "react";
-import DeleteIcon from "@material-ui/icons/Delete";
+import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
+import $ from "jquery";
 
 function Project(props) {
   function handleClick() {
     props.onDelete(props.id);
   }
 
-  return (
-    <div className="note">
-      <h1 class="formh1">{props.title}</h1>
-      <p>{props.desc}</p>
-      <p>{props.img}</p>
-      <button onClick={handleClick}><DeleteIcon className="deleteIcon" /></button>
+   return (
+    <div className="proj-grid-item">
+      <div className="proj-grid-card-img-container">
+                        
+      </div>
+      <div className="proj-grid-card-content">
+                        
+      <h3>{props.title}</h3>
+      <p className="proj-excerpt">{props.desc}</p>
+      <DeleteOutlineIcon className="projdeleteicon" onClick={handleClick} />
+      </div>
     </div>
+
   );
 }
 
 export default Project;
+
+   

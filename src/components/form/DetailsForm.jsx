@@ -4,6 +4,9 @@ import SkillForm from '../form/addSkill/addSkillForm';
 import ExperienceForm from '../form/addExp/addExpForm';
 import ProjectForm from '../form/addProj/addProjForm';
 import Validate from '../../Validate';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+
+
 function DetailsForm(){
 useEffect(()=>{
      Validate();
@@ -41,6 +44,7 @@ async function handleSubmit(){
        projects:projects
 
    }
+   console.log(portfolio);
    const response=await fetch("http://localhost:5000/portfolios/create_new",{
     method:"POST",
     headers:{
@@ -55,35 +59,49 @@ body:JSON.stringify(
 }
 
 return(
-    <div class="formdiv">
-        <h2 class="formh2">Basic Details</h2>
-        <label>Name</label>
-        <input onChange={(e)=>setName(e.target.value)}></input><br></br><br></br>
+   <div class="form-div-external">
+   <div class="formdiv-internal">
+     <div class="form-main-div">
 
-        <label>Email</label>
-        <input onChange={(e)=>setEmail(e.target.value)}></input><br></br><br></br>
 
-        <label>Contact No.</label>
-        <input onChange={(e)=>setMob(e.target.value)}></input><br></br><br></br>
+      <div class="basicdetails">
+           
+      <h2 class="bline">Basic Details</h2>
+        <div class="basicdetailsdiv">
+        <input placeholder="Name....."  onChange={(e)=>setName(e.target.value)}></input>
+        <input placeholder="Email....." onChange={(e)=>setEmail(e.target.value)}></input>
+        <input placeholder="Contact....." onChange={(e)=>setMob(e.target.value)}></input>
+        <input placeholder={"LinkedIn....."} onChange={(e)=>setLinkedIn(e.target.value)}></input>
+        <input placeholder="Github....." onChange={(e)=>setGithub(e.target.value)}></input>
         
-        <label>LinkedIn Url</label>
-        <input onChange={(e)=>setLinkedIn(e.target.value)}></input><br></br><br></br>
+      </div>       
+
+      </div>     
         
-        <label>Github Url</label>
-        <input onChange={(e)=>setGithub(e.target.value)}></input><br></br><br></br>
+
+      <div class="aboutdetails">
+           
+           <h2 class="bline">About Yourself</h2>
+            <textarea placeholder="About....." onChange={(e)=>setAbout(e.target.value)} rows="5" ></textarea>
+           </div>
+
+
+       
 
         <SkillForm skills={skills} setSkill={setSkill}/>
-        <ExperienceForm experiences={experiences} setExp={setExp}/>
         <ProjectForm projects={projects} setProj={setProj}/>
-         <button onClick={handleSubmit}>show</button>
-           <h2>About</h2>
-            <textarea placeholder="enter something abount you!" onChange={(e)=>setAbout(e.target.value)}></textarea>
-            
-            
-            
-   
-  
+        <ExperienceForm experiences={experiences} setExp={setExp}/>
+        
+     </div>
+        
+         
     </div>
+    <button onClick={handleSubmit}> submit</button>
+    <div class="formfooter">
+    Copyright © Resumama
+    </div>
+   </div> 
+    
 )
 
 }

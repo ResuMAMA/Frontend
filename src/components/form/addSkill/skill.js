@@ -1,5 +1,5 @@
 import React from "react";
-import DeleteIcon from "@material-ui/icons/Delete";
+import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
 
 function Skill(props) {
   function handleClick() {
@@ -7,9 +7,9 @@ function Skill(props) {
   }
 
   return (
-    <div className="note">
-      <h1 class="formh1">{props.skill}</h1>
-      <button onClick={handleClick}><DeleteIcon className="deleteIcon" /></button>
+    <div className="skill-grid-item">
+      <h3>{props.skill}</h3>
+      <DeleteOutlineIcon className="skilldeleteicon" onClick={handleClick} />
     </div>
   );
 }

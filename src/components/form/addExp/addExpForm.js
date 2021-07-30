@@ -23,16 +23,10 @@ function ExperienceForm({experiences,setExp}) {
   }
 
   return (
-    <div>
-      <h1 class="formh1">Add Experience</h1>
-       
-      <div className="main_div">
-        
-        <div >
-       
-          <br />
-
+    <div class="experiencedetails">
+      <h2>Experience</h2>
       <CreateArea onAdd={addExp} />
+      <div class="expgrid">
       {experiences.map((expItem, index) => {
         return (
           <Experience
@@ -46,8 +40,9 @@ function ExperienceForm({experiences,setExp}) {
       })}
       </div>
       </div>
-     </div>
+     
   );
 }
 
 export default ExperienceForm;
+

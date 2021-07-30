@@ -409,13 +409,10 @@
   background-color: #F1F2F6;
   padding: 30px;
   transition: all 0.8s ease;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-
- 
+  flex-wrap: wrap; 
  }
 
 .Grid-item {

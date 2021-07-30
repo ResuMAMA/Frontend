@@ -21,16 +21,10 @@ function SkillForm({skills,setSkill}) {
   }
 
   return (
-    <div>
-      <h1 class="formh1">Add Skills</h1>
-       
-      <div className="main_div">
-        
-        <div >
-       
-          <br />
-
-      <CreateArea onAdd={addSkill} />
+    <div class="skilldetails">
+      <h2>Skills</h2>
+       <CreateArea onAdd={addSkill} />
+      <div class="skillgrid">
       {skills.map((skillItem, index) => {
         return (
           <Skill
@@ -42,7 +36,9 @@ function SkillForm({skills,setSkill}) {
         );
       })}
       </div>
-      </div>
+      
+      
+      
      </div>
   );
 }

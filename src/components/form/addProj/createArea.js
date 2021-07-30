@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AddIcon from "@material-ui/icons/Add";
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 function CreateArea(props) {
   const [proj, setProj] = useState({
     title: "",
@@ -29,30 +29,32 @@ function CreateArea(props) {
   }
 
   return (
-    <div class="createArea">
+    <div class="projcreateArea">
       <form>
         <input
           name="title"
           onChange={handleChange}
           value={proj.title}
-          placeholder="Title"
+          placeholder="Title....."
         />
         <textarea
           name="description"
           onChange={handleChange}
           value={proj.description}
-          placeholder="Description..."
-          rows="3"
+          placeholder="Description....."
+          rows="4"
         />
         <input
           name="img"
           onChange={handleChange}
           value={proj.img}
-          placeholder="Image"
+          placeholder="Drive Link of Project Image....."
         />
-        <button className="newBtn" onClick={submitProj}><AddIcon /></button>
-        {/* <button onClick={submitExp}><AddIcon /></button> */}
-      </form>
+        <div class="projadd"> 
+        <p>Add Project
+        <AddCircleIcon className="projaddicon" onClick={submitProj}/></p>
+        </div>
+         </form>
     </div>
   );
 }

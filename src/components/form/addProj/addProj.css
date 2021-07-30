@@ -1,67 +1,161 @@
-.main_div {
-  
-  width: 50%;
-
-  height: 100vh;
-
-  background: #085f5f;
-  background-size: cover;
-  display: flex;
-
-  flex-direction: row;
-  margin: auto;
-  justify-content: center;
-
-  align-items: center;
-
-  text-align: center;
-
-}
-form input,
-form textarea {
-  width: 100%;
-  border: none;
-  padding: 4px;
-  outline: none;
-  font-size: 1.2em;
-  font-family: inherit;
-  resize: none;
-}
-
-.createArea{
-    background-color: aliceblue;
-}
-
-.note {
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 2px 5px #ccc;
+  /*------------------------------------------------------------------------------------------*/
+  .projectdetails{
+    width: 100%;
     padding: 10px;
-    width: 240px;
-    margin: 16px;
-    float: left;
-  }
-  .note h1 {
-    font-size: 1.1em;
-    margin-bottom: 6px;
-  }
-  .note p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-  
-  .note button {
-    background-color: #8566aa;
-    border-radius: 50%;
-    padding: 5px;
-    color: aliceblue;
-    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
-  }
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+    min-width: 180px;
+}
 
-  .note button:hover{
-    background-color: transparent;
-   color: crimson;
-  box-shadow: 5px 5px 15px -5px rgba(255, 0, 0, 0.5);
+.projectdetails h2{
+  /* margin:0 20px; */
+  padding: 5px 0;
+  border-bottom: solid 1px #C8CAFF;
+  font-weight: lighter;
+  color: #5A5EB2;
+  text-align: right;
+  width: 100%;
+}
+ 
+.projcreateArea{
+  width: 100%;
+  
+}
+
+.projcreateArea form{
+  width: 100%;
+  /* margin: 20px; */
+  margin: 20px 0;
+  border: solid #C8CAFF 1px;
+  padding: 13px;
+}
+
+.projcreateArea form input{
+  background-color: #C8CAFF;
+  /* background-color: #DCDCE6; */
+      border: none;  
+      height: 50px;
+      font-size: 0.7rem;
+      font-family: inherit;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+}
+
+.projcreateArea form textarea{
+  background-color: #C8CAFF;
+  /* background-color: #DCDCE6; */
+      /* border: none;  
+      height: 50px; */
+      font-size: 0.7rem;
+      width: 100%;
+      padding: 10px;
+      font-family: inherit;
+      margin-bottom: 5px;
+}
+
+.projaddicon{
+  transform: scale(0.8);
+  margin-right: auto;
+}
+
+.projadd{
+  width: 100%;
+  margin:10px auto;
+ }
+
+.projadd p{
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  font-size: 0.7rem;
+}
+
+.projgrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 30px;
+  /* margin-left: 20px; */
+  /* align-items: center; */
+  justify-content: space-around;
+}
+
+.proj-grid-item{
+  background-color: #DCDCE6;
+  /* width: 100%; */
+  max-width: 300px;
+  min-height: 250px;
+  min-width: 220px;
+  /* max-height: 300px; */
+  /* box-shadow: 2px 2px 5px #dddde0, -1px -1px 5px #dddde0; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.proj-grid-card-img-container {
+  border-radius: 10px 10px 0 0 ;
+  width: 100%;
+  /* max-width: 250px; */
+  height: 100%;
+  min-height: 200px;
+  /* grid-column: 2; */
+  background-color: #c1b7b4;
+  background-image: url('https://www.dropbox.com/s/7d5qt5wb2xpqeww/city-street.jpg?raw=1');
+  background-size: cover;
+  background-position: center center;
+  
+}
+
+.show{
+  display: block;
+}
+
+.proj-grid-card-content {
+  /* grid-column: 3/5; */
+  padding: 5px 10px;
+  /* border-left: 1px solid #ccc; */
+  width: 100%;
+  /* display: none; */
+}
+
+.proj-grid-card-content h3 {
+  margin-bottom: 0;
+  margin-top: 20px;
+  /* color: #2A32DF; */
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.proj-grid-card-content p {
+  font-size: 0.6rem;
+}
+
+.proj-excerpt{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width:1000px) {
+  .projgrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
+  /* .proj-grid-item {
+    display: block;
+  }
+  .proj-grid-card-img-container {
+    height: 250px;
+    width: 100%;
+  }
+  .proj-grid-card-content {
+    border: 0;
+    border-top: 1px solid #ccc;
+  } */
+}
+
+.projdeleteicon{
+  transform: scale(0.8);
+  color: #5A5EB2;
+}

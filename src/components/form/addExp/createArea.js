@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import AddIcon from "@material-ui/icons/Add";
+import AddCircleIcon from '@material-ui/icons/AddCircle';
 function CreateArea(props) {
   const [exp, setExp] = useState({
     title: "",
@@ -27,23 +27,27 @@ function CreateArea(props) {
   }
 
   return (
-    <div class="createArea">
+    <div class="expcreateArea">
       <form>
         <input
           name="title"
           onChange={handleChange}
           value={exp.title}
-          placeholder="Title"
+          placeholder="Title....."
         />
         <textarea
           name="description"
           onChange={handleChange}
           value={exp.description}
-          placeholder="Description..."
+          placeholder="Description....."
           rows="3"
         />
-        <button className="newBtn" onClick={submitExp}><AddIcon /></button>
-        {/* <button onClick={submitExp}><AddIcon /></button> */}
+        
+        <div class="expadd"> 
+        <p>Add Experience
+        <AddCircleIcon className="expaddicon" onClick={submitExp}/></p>
+        </div>
+
       </form>
     </div>
   );
