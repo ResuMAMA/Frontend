@@ -40,8 +40,10 @@ async function handleSubmit(){
            github:github
        },
        skills:skills,
-       experiences:experiences,
-       projects:projects
+       experience:experiences,
+       projects:projects,
+       template_no:"1"
+
 
    }
    console.log(portfolio);

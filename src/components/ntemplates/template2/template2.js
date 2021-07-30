@@ -18,7 +18,7 @@ function Template1(){
     //states
     const[load,setLoad]=useState(true)
     const [data,setData]=useState();
-    const id="60c4f510f975641cb4ab4866"; //to be fetched from url..
+    const id="6104051bf7d8a266188115c1"; //to be fetched from url..
     useEffect(()=>{
         async function fetchData(){
         const response=await fetch("http://localhost:5000/portfolios/portfolio.me",{
@@ -39,7 +39,7 @@ function Template1(){
     }
 
      }
-    // fetchData();
+     fetchData();
     
        
     },[])
@@ -53,7 +53,7 @@ function Template1(){
                 <div className="temp1head canvasBox">                 
                 <nav className="temp1nav" >
                     <ul >
-    <li class="Temp1Logo">Sonia</li>
+            <li class="Temp1Logo">{data.name}</li>
                         <li className="Temp1navItem"> <a href="#t1head">About</a></li>
                         <li className="Temp1navItem"> <a href="#t1skill">Skills</a></li>
                         <li className="Temp1navItem"> <a href="#t1project">Projects</a></li>
@@ -87,7 +87,7 @@ function Template1(){
                 <div className="skilltag">Skills</div> 
                 <div className="Grid-div">
                 <div className="Grid">
-                    {data.skills[0].split(',').map((item,index)=>
+                    {data.skills.map((item,index)=>
                     <div className="Grid-item">
                         <h1>{item}</h1>
                     </div>
