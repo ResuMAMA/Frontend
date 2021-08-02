@@ -17,6 +17,7 @@ const [name,setName]=useState("");
 const [email,setEmail]=useState("");
 const [mob,setMob]=useState("");
 const [linkedIn,setLinkedIn]=useState("");
+const [profileImage,setProfileImage]=useState("");
 const [github,setGithub]=useState("");
 const [about,setAbout]=useState("");
 const [experiences, setExp] = useState([]);
@@ -28,13 +29,14 @@ const token=localStorage.getItem("token");
 
 async function handleSubmit(){
   // e.preventDefault();
-
+  
    const portfolio={
        user_id:user_id,
        name:name,
        email:email,
        mobile:mob,
        about:about,
+       profileImage_url:profileImage,
        social_links:{
            linkedIn:linkedIn,
            github:github
@@ -81,6 +83,8 @@ return(
         <input placeholder="Contact....." onChange={(e)=>setMob(e.target.value)}></input>
         <input placeholder={"LinkedIn....."} onChange={(e)=>setLinkedIn(e.target.value)}></input>
         <input placeholder="Github....." onChange={(e)=>setGithub(e.target.value)}></input>
+        <input placeholder="Drive link for profile image....." onChange={(e)=>setProfileImage(
+          `https://drive.google.com/uc?export=view&id=${e.target.value.split("/")[5]}`)}></input>
         
       </div>       
 

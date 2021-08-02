@@ -13,6 +13,7 @@ function Dashboard(){
 
 //logic---> fetch all the portfolios of the loggedIn user
    const[data,setData]=useState();
+   const[loading,setLoading]=useState(true);
 useEffect(()=>{
     Validate();
     const user_id=localStorage.getItem("userid");
@@ -29,6 +30,12 @@ useEffect(()=>{
       console.log(response)
       const realdata=await response.json();
       console.log(realdata)
+      setData(realdata)
+      if(data!==null){
+      setTimeout(()=>{
+      setLoading(false)
+      },1000)}
+     // await setData(realdata)
      
   }
 fetchData();
@@ -65,6 +72,7 @@ fetchData();
     </div>
       
     </div>
+    
 
     <div class="dash-center-out">
     <div class="dash-center-in">
@@ -72,148 +80,30 @@ fetchData();
 
      <div class="dash-container">
   <main class="grid">
+  {loading?<h1>Loading......</h1>:  
+  
+    data.map((item,index)=>
     <article>
       <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" />
       <div class="text">
-        <p>Seamlessly visualize quality</p>
+        <p>{item.template_no}</p>
         <div class="bottom-bar">
          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
          <div class="share bottom-bar-icon"><ShareIcon /></div>
          <div class="edit bottom-bar-icon"><EditIcon /></div>
         </div>
       </div>
-    </article>
-    <article>
-      <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo" />
-      <div class="text">
-      <p>Completely Synergize</p>
-      <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-         <div class="share bottom-bar-icon"><ShareIcon /></div>
-         <div class="edit bottom-bar-icon"><EditIcon /></div>
-        </div>
-      </div>
-    </article>
-    <article>
-      <img src="https://picsum.photos/600/400?image=1056" alt="Sample photo" />
-      <div class="text">
-      <p>Dynamically Procrastinate</p>
-      <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-         <div class="share bottom-bar-icon"><ShareIcon /></div>
-         <div class="edit bottom-bar-icon"><EditIcon /></div>
-        </div>
-      </div>
-    </article>
-    <article>
-      <img src="https://picsum.photos/600/400?image=1050" alt="Sample photo" />
-      <div class="text">
-      <p>Best in class</p>
-      <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-         <div class="share bottom-bar-icon"><ShareIcon /></div>
-         <div class="edit bottom-bar-icon"><EditIcon /></div>
-        </div>
-      </div>
-    </article>
-    <article>
-      <img src="https://picsum.photos/600/400?image=1041" alt="Sample photo" />
-      <div class="text">
-      <p>Dynamically innovate supply chains</p>
-      <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-         <div class="share bottom-bar-icon"><ShareIcon /></div>
-         <div class="edit bottom-bar-icon"><EditIcon /></div>
-        </div>
-      </div>
-    </article>
-    <article>
-      <img src="https://picsum.photos/600/400?image=1015" alt="Sample photo" />
-      <div class="text">
-      <p>Sanity check</p>
-      <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-         <div class="share bottom-bar-icon"><ShareIcon /></div>
-         <div class="edit bottom-bar-icon"><EditIcon /></div>
-        </div>
-      </div>
-    </article>
-    <article>
-      <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" />
-      <div class="text">
-        <p>Seamlessly visualize quality</p>
-        <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-         <div class="share bottom-bar-icon"><ShareIcon /></div>
-         <div class="edit bottom-bar-icon"><EditIcon /></div>
-        </div>
-      </div>
-    </article>
-    <article>
-      <img src="https://picsum.photos/600/400?image=1063" alt="Sample photo" />
-      <div class="text">
-      <p>Completely Synergize</p>
-      <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-         <div class="share bottom-bar-icon"><ShareIcon /></div>
-         <div class="edit bottom-bar-icon"><EditIcon /></div>
-        </div>
-      </div>
-    </article>
-    <article>
-      <img src="https://picsum.photos/600/400?image=1056" alt="Sample photo" />
-      <div class="text">
-      <p>Dynamically Procrastinate</p>
-      <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-         <div class="share bottom-bar-icon"><ShareIcon /></div>
-         <div class="edit bottom-bar-icon"><EditIcon /></div>
-        </div>
-      </div>
-    </article>
-    <article>
-      <img src="https://picsum.photos/600/400?image=1050" alt="Sample photo" />
-      <div class="text">
-      <p>Best in class</p>
-      <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-         <div class="share bottom-bar-icon"><ShareIcon /></div>
-         <div class="edit bottom-bar-icon"><EditIcon /></div>
-        </div>
-      </div>
-    </article>
-    <article>
-      <img src="https://picsum.photos/600/400?image=1041" alt="Sample photo" />
-      <div class="text">
-      <p>Dynamically innovate supply chains</p>
-      <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-         <div class="share bottom-bar-icon"><ShareIcon /></div>
-         <div class="edit bottom-bar-icon"><EditIcon /></div>
-        </div>
-      </div>
-    </article>
-    <article>
-      <img src="https://picsum.photos/600/400?image=1015" alt="Sample photo" />
-      <div class="text">
-      <p>Sanity check</p>
-      <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-         <div class="share bottom-bar-icon"><ShareIcon /></div>
-         <div class="edit bottom-bar-icon"><EditIcon /></div>
-        </div>
-      </div>
-    </article>
-    
+    </article>)}
     <article class="createCard">
     <img src="/img/logo.png" alt="Sample photo" />
       <div class="text">
       <p>Create Portfolio</p>
       <div class="bottom-bar">
-         <div class="add bottom-bar-icon"><AddToPhotosIcon /></div>
+         <div class="add bottom-bar-icon"><button onClick={()=>window.location="/form"}><AddToPhotosIcon /></button></div>
       </div>
       </div>
     </article>
+
   </main>
 </div>
 
