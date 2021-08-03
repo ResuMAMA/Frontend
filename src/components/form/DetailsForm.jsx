@@ -29,7 +29,18 @@ const token=localStorage.getItem("token");
 
 async function handleSubmit(){
   // e.preventDefault();
-  
+    const myProjects=[];
+    projects.map((item,index)=>{
+      const obj={
+        title:item.title,
+        description:item.description,
+        img:`https://drive.google.com/uc?export=view&id=${item.img.split("/")[5]}`
+      }
+      myProjects.push(obj)
+     // item.img=`https://drive.google.com/uc?export=view&id=${item.img.split("/")[5]}`
+    })
+    
+
    const portfolio={
        user_id:user_id,
        name:name,
@@ -43,7 +54,7 @@ async function handleSubmit(){
        },
        skills:skills,
        experience:experiences,
-       projects:projects,
+       projects:myProjects,
        template_no:"1"
 
 
