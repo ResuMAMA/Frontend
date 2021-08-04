@@ -55,7 +55,7 @@ html, body{
 
 .Head-div a:visited{
   text-decoration: none;
-  color:#3391ff;
+  color:#94c5fd;
   
 }
 .job-ready{
@@ -78,7 +78,7 @@ html, body{
 .Head-div{
   position: fixed;
   width: 100%;
-  min-height: 100px;
+  min-height: 80px;
   /* max-height: 150px; */
   display: flex;
   align-items: center;
@@ -116,7 +116,7 @@ html, body{
        letter-spacing: 0.04rem;
        font-family: 'Montserrat', sans-serif;
        font-weight: 600;
-       color: #3391ff;
+       color:#94c5fd;
        /* padding:6px;
        background:rgb(255, 255, 255 , 0.1); */
    }
@@ -435,12 +435,13 @@ html, body{
 
 .more{
   color: rgb(138, 133, 133);
+  
   font-family: 'Gowun Dodum', sans-serif;
-  font-weight: 500;
+  font-weight: 550;
   letter-spacing: 0.05rem;
   font-size: 0.76rem;
   text-align: center;
-  line-height: 1rem;
+  line-height: 0.8rem;
   margin-bottom: 30px;
 }
 
