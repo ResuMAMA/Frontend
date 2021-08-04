@@ -115,11 +115,17 @@ return(
         <ProjectForm projects={projects} setProj={setProj}/>
         <ExperienceForm experiences={experiences} setExp={setExp}/>
         
+        <div class="aboutdetails">
+           
+           <h2 class="bline">Title for Portfolio</h2>
+            <textarea placeholder="Title....." onChange={(e)=>setAbout(e.target.value)} rows="2" ></textarea>
+           </div>
+        
      </div>
         
-         
+          
     </div>
-    <button onClick={handleSubmit}> submit</button>
+    <button class="form-submit-button" onClick={handleSubmit}> Submit</button>
     <div class="formfooter">
     Copyright © Resumama
     </div>
