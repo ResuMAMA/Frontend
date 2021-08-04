@@ -600,7 +600,7 @@
   /* font-family: 'Belleza', sans-serif; */
 }
 
-.container {
+.expcontainer {
   width: 80%;
   padding: 50px 0;
   margin: 50px auto;
@@ -609,7 +609,7 @@
   background-color: #F1F2F6;
 }
 
-.container:before {
+.expcontainer:before {
   content: '';
   position: absolute;
   top: 0;
@@ -682,7 +682,7 @@
 
 
 @media screen and (max-width: 768px) {
-  .container:before {
+  .expcontainer:before {
      left: 8px;
      width: 2px;
   }

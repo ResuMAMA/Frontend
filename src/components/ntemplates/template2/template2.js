@@ -137,7 +137,7 @@ function Template1(){
                     <div className="expdiv">
                     <div className="exptag">Experience</div>
 
-                    <div className="container">
+                    <div className="expcontainer">
 
    
                     {

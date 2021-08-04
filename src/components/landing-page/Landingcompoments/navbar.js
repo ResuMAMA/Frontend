@@ -77,10 +77,10 @@ function Navbar() {
       </div>
       <div class="sign-div">
    
-        <div class="sign-content" onClick={callogin}>
+        {/* <div class="sign-content" onClick={callogin}>
         Sign-in
         <LockOpenIcon />
-        </div>
+        </div> */}
 
       </div>
     </div>

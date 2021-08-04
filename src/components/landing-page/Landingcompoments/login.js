@@ -105,7 +105,7 @@ function Login() {
               <h2>Log In</h2>
               <input type="email" name="email" placeholder="email" onChange={(e)=>setLoginEmail(e.target.value)}/>
               <input type="password" name="password" placeholder="Password" onChange={(e)=>setLoginPass(e.target.value)}/>
-              <button onClick={(e)=>{loginuser(e)}}>Login</button>
+              <button class="entrybutton" onClick={(e)=>{loginuser(e)}}>Login</button>
               <p class="signup">
                 Don't have an account ?
                 <a onClick={toggleForm}>
@@ -122,7 +122,7 @@ function Login() {
               <input type="text" name="usernameuser" placeholder="Username" onChange={(e)=>setUsername(e.target.value)}/>
               <input type="email" name="emailuser" placeholder="Email Address" onChange={(e)=>setEmail(e.target.value)}/>
               <input type="password" name="passworduser" placeholder="Create Password" onChange={(e)=>setPassword(e.target.value)}/>
-              <button onClick={(e)=>{register(e)}}>Sign Up</button>
+              <button class="entrybutton" onClick={(e)=>{register(e)}}>Sign Up</button>
               <p class="signup">
                 Already have an account ?
                 <a onClick={toggleForm}>
