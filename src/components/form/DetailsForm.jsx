@@ -23,6 +23,7 @@ const [about,setAbout]=useState("");
 const [experiences, setExp] = useState([]);
 const [projects, setProj] = useState([]);
 const [skills, setSkill] = useState([]);
+const [title,setTitle]=useState("");
 
 const user_id=localStorage.getItem("userid");
 const token=localStorage.getItem("token");
@@ -55,7 +56,8 @@ async function handleSubmit(){
        skills:skills,
        experience:experiences,
        projects:myProjects,
-       template_no:"1"
+       template_no:"1",
+       title:title
 
 
    }
@@ -118,7 +120,7 @@ return(
         <div class="aboutdetails">
            
            <h2 class="bline">Title for Portfolio</h2>
-            <textarea placeholder="Title....." onChange={(e)=>setAbout(e.target.value)} rows="2" ></textarea>
+            <textarea placeholder="Title....." onChange={(e)=>setTitle(e.target.value)} rows="2" ></textarea>
            </div>
         
      </div>
