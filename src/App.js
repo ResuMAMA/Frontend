@@ -8,6 +8,8 @@ import Schema from './components/form/DetailsForm';
 import Template1 from './components/ntemplates/template2/template2';
 //import Template3  from './components/ntemplates/template3/template3';
 import Template3 from './components/ntemplates/template3/template3';
+import ForgotPassword from './components/landing-page/Landingcompoments/forgotPassword';
+import ChangePassword from './components/dashboard/changePass';
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
        
          <Route path="/Template1/my_portfolio/6111684e0d368a1638a183c4" component={Template1}/>
          <Route path="/Template3/my_portfolio/6111684e0d368a1638a183c4" component={Template3}/>
+         <Route path="/forgotPassword" component={ForgotPassword}/>
+         <Route path="/changePassword" component={ChangePassword}/>
       </Switch>
     
   );

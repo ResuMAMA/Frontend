@@ -1,10 +1,10 @@
 import React from "react";
 
-function ForgotPassword(){
+function ChangePassword(){
 return (
-    <div class="forgotpss">
+    <div class="changepss">
         <form>
-            <input placeholder="Email"></input>
+            <input placeholder="Old Password"></input>
             <br />
             <input placeholder="New Password"></input>
             <br />
@@ -13,4 +13,4 @@ return (
     </div>
 );
 }
- export default ForgotPassword;
+ export default ChangePassword;
