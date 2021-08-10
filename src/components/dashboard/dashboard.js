@@ -63,7 +63,7 @@ fetchData();
           <AccountCircleIcon className="material-icons accnt"/>
           <span class="accnt-setting">Account Settings</span>
           <ul class="dropdown">
-            <li class="active"><a href="#">Change Password</a></li>
+            <li class="active"><a href="/changePassword">Change Password</a></li>
             <li class="active" onClick={()=>localStorage.clear()}><a href="/">Logout</a></li>
             
           </ul>
