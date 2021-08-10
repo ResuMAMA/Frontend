@@ -50,11 +50,19 @@
     justify-content: center;
     margin-left: 5%;
     margin-right: 20px;
+    
     }
 
-  .dash-logo-img{
+    .LOGO p{
+      font-family: 'Allura', cursive;
+     color: black;
+     font-size: 1.6rem;
+     font-weight:600;
+    }
+
+  /* .dash-logo-img{
    max-width: 100px;
-  }
+  } */
 
           /* --------------------------------------------Dashboard heading---------------------------------- */
 

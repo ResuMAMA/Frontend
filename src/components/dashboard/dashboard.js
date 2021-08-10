@@ -49,7 +49,8 @@ fetchData();
     <div class="dash-nav-in">
         
     <div class="LOGO">
-        <img class="dash-logo-img" src="/img/b-r.png"></img>
+        {/* <img class="dash-logo-img" src="/img/b-r.png"></img> */}
+        <p class="dash-logo-img"> Resumama</p>
        <div className="chnglogo"> <PhoneIphoneIcon /> </div> 
     </div>
 
@@ -99,7 +100,7 @@ fetchData();
       <div class="text">
       <p>Create Portfolio</p>
       <div class="bottom-bar">
-         <div class="add bottom-bar-icon"><button onClick={()=>window.location="/form"}><AddToPhotosIcon /></button></div>
+         <div class="add bottom-bar-icon"><button onClick={()=>window.location="/createPortfolio/create"}><AddToPhotosIcon /></button></div>
       </div>
       </div>
     </article>

@@ -106,7 +106,7 @@ function Login() {
               <input type="email" name="email" placeholder="email" onChange={(e)=>setLoginEmail(e.target.value)}/>
               <input type="password" name="password" placeholder="Password" onChange={(e)=>setLoginPass(e.target.value)}/>
               <button class="entrybutton" onClick={(e)=>{loginuser(e)}}>Login</button>
-              <button class="forgotbutton" >Forgot Password?</button>
+              <button class="forgotbutton" onClick={()=>window.location="/forgotPassword"} >Forgot Password?</button>
               <p class="signup">
                 Don't have an account ?
                 <a onClick={toggleForm}>
