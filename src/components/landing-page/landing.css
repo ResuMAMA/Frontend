@@ -856,6 +856,27 @@ section .container.active .signinBx .imgBx {
   color: white;
 }
 
+.forgotbutton{
+  border: 1px solid white;
+  width: 160px;
+  height: 30px;
+  border-radius: 100px;
+ align-items: center;
+ justify-content:  center;
+ color: #677eff;
+ cursor: pointer;
+ font-family: 'Poppins', sans-serif;
+ font-size: 0.7rem;
+ margin-left: 5px;
+}
+
+.forgotbutton:hover{
+background: rgb(37, 36, 36);
+font-weight: 600;
+color: white;
+}
+
+
 /*----------------------------------------footer----------------------------------------------*/
 .landfoot{
   height: 130px;

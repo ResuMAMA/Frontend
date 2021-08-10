@@ -28,7 +28,7 @@ function Template1(){
             method:"GET",
             headers:{
             "Content-Type":"application/json",
-            "portfolio_id":id
+            "portfolio_id":"6111684e0d368a1638a183c4"
          }
         })
         
