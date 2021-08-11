@@ -21,8 +21,8 @@ function App() {
          <Route path="/createPortfolio" component={Create}/>
          <Route path="/form" component={Schema}/>
        
-         <Route path="/Template1/my_portfolio/6111684e0d368a1638a183c4" component={Template1}/>
-         <Route path="/Template3/my_portfolio/6111684e0d368a1638a183c4" component={Template3}/>
+         <Route path="/Template1/my_portfolio/*" component={Template1}/>
+         <Route path="/Template3/my_portfolio/*" component={Template3}/>
          <Route path="/forgotPassword" component={ForgotPassword}/>
          <Route path="/changePassword" component={ChangePassword}/>
       </Switch>
