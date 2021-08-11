@@ -27,9 +27,9 @@ useEffect(()=>{
           "user_id":user_id
        }
       })
-      console.log(response)
+     // console.log(response)
       const realdata=await response.json();
-      console.log(realdata)
+      //console.log(realdata)
       setData(realdata)
       if(data!==null){
       setTimeout(()=>{
@@ -87,10 +87,10 @@ fetchData();
     <article>
       <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" />
       <div class="text">
-        <p>{item.template_no}</p>
+        <p>{item.title}</p>
         <div class="bottom-bar">
          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-         <div class="share bottom-bar-icon"><ShareIcon /></div>
+         <div class="share bottom-bar-icon"><button onClick={(e)=>alert("Link to your portfolio: "+`localhost:3000/Template${item.template_no}/my_portfolio/${item._id}`)}><ShareIcon/></button></div>
          <div class="edit bottom-bar-icon"><EditIcon /></div>
         </div>
       </div>

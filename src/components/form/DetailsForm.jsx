@@ -4,12 +4,13 @@ import SkillForm from '../form/addSkill/addSkillForm';
 import ExperienceForm from '../form/addExp/addExpForm';
 import ProjectForm from '../form/addProj/addProjForm';
 import Validate from '../../Validate';
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+//import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 
-function DetailsForm(){
+function DetailsForm(temp_no){
 useEffect(()=>{
      Validate();
+    // console.log(temp_no)
      },[])
 
 
@@ -56,12 +57,10 @@ async function handleSubmit(){
        skills:skills,
        experience:experiences,
        projects:myProjects,
-       template_no:"1",
+       template_no:temp_no.temp_no,
        title:title
-
-
-   }
-   console.log(portfolio);
+      }
+  // console.log(portfolio);
    const response=await fetch("http://localhost:5000/portfolios/create_new",{
     method:"POST",
     headers:{
