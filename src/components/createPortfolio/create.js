@@ -10,7 +10,7 @@ function Create(){
 const [temp_no,setTemp_no]=useState(1);
 const [go,setgo]=useState(false)
 return (
-  <div>
+  <div class="choosetem">
 {go?<DetailsForm temp_no={temp_no}/>:
 
   <div class="portfolioAlbumPage">
@@ -44,19 +44,13 @@ return (
               setgo(true);
           }}>Go to Form </button>
       </div>
-  
-
-  {/* <div class="portfolioAlbumPage-more">
-      more exciting templates 
-      <br />coming soon....
-      <br />
-      <ArrowForwardOutlinedIcon style={{color: "#576DF8"}}/>
-  </div> */}
-
-</div>
-
+ </div>
+ 
 
   </div>}
+  <div class="choosefooter">
+    Copyright © Resumama
+    </div>
 </div>
       );
 }

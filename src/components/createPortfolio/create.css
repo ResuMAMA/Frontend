@@ -1,66 +1,12 @@
-/* .create{
-    width: 100%;
-    height: 100%;
+  .choosetem{
     background-color: white;
-    color: aliceblue;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.templates{
-    text-align: center;
-    margin: 5% 5%;
-    color: black;
-}
-
-.album{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 20px;
-    padding: 20px 20px;
-    
-}
-
-.carousel-root{
-    width: 50%;
-    
-    padding: 20px 20px;
-}
-
-.form-img{
-    
-    width: 50%;
-}
-
-.fourth {
-    border-color: #f1c40f;
-    color: rgb(230, 84, 84);
-    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
-    background-position: 100%;
-    background-size: 400%;
-    transition: background 300ms ease-in-out;
-    border-radius: 20px;
-    width: 300px;
-    height: 70px;
-    margin-bottom: 100px;
   }
-  .fourth:hover {
-    background-position: 0;
-  } */
-
-  /* .carousel .control-arrow, .carousel.carousel-slider .control-arrow{
-      opacity: 1;
-      background-color: black;
-  } */
-
   .portfolioAlbumPage{
     background-color: #F9F9FF;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     padding: 30px;
@@ -69,6 +15,7 @@
 
   .portfolioAlbumPage-Container_style{
     padding: 30px 0;
+    background-color: #F9F9FF;
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -91,11 +38,11 @@
   }
 
   .portfolioAlbumPage-template-content h3{
-    color: rgb(177, 172, 172);
+    color: rgb(156, 151, 151);
     font-family: 'Gowun Dodum', sans-serif;
     font-weight: 600;
     letter-spacing: 0.056rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     margin-top: 10px;    
   }
   
@@ -123,6 +70,7 @@
     text-align: center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.22), 0 6px 6px rgba(0,0,0,0.23);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
   }
   
   .portfolioAlbumPage-temp-card:hover{
@@ -161,12 +109,14 @@
    height: 38px;
    margin: 20px 0;
    font-family: 'Gowun Dodum', sans-serif;
-   background-color: #e2e4f5;
+   /* background-color: #e2e4f5; */
    color:rgb(59, 50, 50);
    font-size: 0.8rem;
-   border: 1px solid #8d99e4;
+   /* border: 1px solid #8d99e4; */
    padding: 5px;
    margin-bottom: 80px;
+   background-color: #C8CAFF;
+      border: none;  
   }
   
   .portfolioAlbumPage-template-content input:focus{
@@ -196,6 +146,7 @@
       width: 280px;
       height: 280px;
       margin: 20px 5px;
+      
     }
     
     .portfolioAlbumPage-template-content h4{
@@ -230,3 +181,15 @@
     /* color: white; */
     }
   
+.choosefooter{
+  width: 100%;
+       height: 100px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: rgb(31, 27, 27);
+       /* color: rgb(31, 27, 27); */
+       color: white;
+       font-size: 0.7rem;
+       font-family: 'Montserrat', sans-serif;
+}

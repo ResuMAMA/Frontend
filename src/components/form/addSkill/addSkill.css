@@ -37,12 +37,13 @@
 
 .skillcreateArea form input{
   background-color: #C8CAFF;
-  font-family: inherit;
+  /* font-family: inherit; */
       border: none;  
       height: 100%;
       padding: 10px;
       font-size: 0.7rem;
       width: 100%;
+      font-family: 'Montserrat', sans-serif;
       
 }
 
@@ -83,4 +84,9 @@
   color: black;
   font-weight: bold;
   /* margin-left: 5px; */
+}
+
+.skilldetails .inputholder p{
+transform: scale(0.9);
+margin-bottom: 4px;
 }

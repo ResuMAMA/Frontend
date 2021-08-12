@@ -31,25 +31,37 @@ function CreateArea(props) {
   return (
     <div class="projcreateArea">
       <form>
+      <div class="inputholder txtar"> 
+        <div class="starHolder"><p>*</p></div>
         <input
+        required="true"
           name="title"
           onChange={handleChange}
           value={proj.title}
           placeholder="Title....."
         />
+        </div>
+        <div class="inputholder txtar"> 
+        <div class="starHolder"><p>*</p></div>
         <textarea
+        required="true"
           name="description"
           onChange={handleChange}
           value={proj.description}
           placeholder="Description....."
           rows="4"
         />
+        </div>
+        <div class="inputholder txtar"> 
+        <div class="starHolder"><p>*</p></div>
         <input
+        required="true"
           name="img"
           onChange={handleChange}
           value={proj.img}
           placeholder="Drive Link of Project Image....."
         />
+        </div>
         <div class="projadd"> 
         <p>Add Project
         <AddCircleIcon className="projaddicon" onClick={submitProj}/></p>

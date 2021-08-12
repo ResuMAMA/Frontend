@@ -71,7 +71,7 @@
   display: none;
 }
 
-@media all and (max-width:889px){
+@media all and (max-width:900px){
   .temp1nav {
         padding: 5px 30px;
     }
@@ -117,6 +117,7 @@
     font-family: 'Allura', cursive;
     font-size: 2rem;
     font-weight: bold;
+    
 }
 
 .temp1nav ul {
@@ -299,7 +300,12 @@
   font-family: 'Belleza', sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
-  transition: all 0.5s ease;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+.hireme:hover{
+  background-color: #2A32DF;
+  color: white;
 }
 
 .photodiv{
@@ -537,7 +543,16 @@
 .proj-card-content h1 {
   margin-bottom: 0;
   margin-top: 20px;
+  font-size: 25px;
   color: #2A32DF;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+.proj-card-content p{
+  font-family: 'Poppins', sans-serif;
+  color: #747171;
+  font-size: 15px;
 }
 
 .proj-excerpt{
@@ -650,7 +665,7 @@
   height: 16px;
   border-radius: 50%;
   border: 2px solid #F5F7FA;
-  background: #4FC1E9;
+  background: #2A32DF;
   margin-top: 10px;
   z-index: 7;
 }
@@ -665,7 +680,8 @@
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 25px;
-  font-weight: 500
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .timeline-content span {
@@ -678,6 +694,9 @@
   line-height: 1.5em;
   word-spacing: 1px;
   color: #888;
+  font-family: 'Poppins', sans-serif;
+  line-height: 0.9rem;
+
 }
 
 
@@ -752,7 +771,13 @@
 }
 
 
+.temp1foot a{
+  color: white;
+}
 
+.temp1foot a:visited{
+  color: white;
+}
 
 
 

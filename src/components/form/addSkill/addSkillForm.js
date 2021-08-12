@@ -23,7 +23,10 @@ function SkillForm({skills,setSkill}) {
   return (
     <div class="skilldetails">
       <h2>Skills</h2>
-       <CreateArea onAdd={addSkill} />
+      <div class="inputholder txtar"> 
+           <div class="starHolder"><p>*</p></div>
+       <CreateArea CreateArea onAdd={addSkill} />
+       </div>
       <div class="skillgrid">
       {skills.map((skillItem, index) => {
         return (

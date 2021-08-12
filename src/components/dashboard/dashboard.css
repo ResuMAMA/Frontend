@@ -39,6 +39,7 @@
     height: 50px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     display: flex;
+    margin-bottom: 20px;
   }
 
          /* --------------------------------------------logo---------------------------------- */
@@ -308,7 +309,8 @@
     height: 100%;
     width:75%;
     display: flex;
-   
+   /* margin-top: 50px;
+   margin-bottom: 70px; */
   }
 
 
@@ -378,7 +380,7 @@
     height: 100%;
     padding: 20px ;
     background-color: #f7f4f4;
-    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
 
    /* ----------------------------------------------------Template cards---------------------------------------------------------------- */
@@ -446,17 +448,64 @@
    }
 
   /* ----------------------------------------------------footer---------------------------------------------------------------- */
-  .dash-foot{
-    min-height: 100px;
+  /* .dash-foot{
+    height: 80px;
     margin-top: auto;
     width: 100%;
-    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-    background-color: #2940D3;
+    background-color: #2940d3;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+  } */
+
+
+  .dashfoot{
+    height: 90px;
+    margin-top: 30px;
+    background-color: #2940d3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
   }
-
-
-
+  
+  @media(max-width:500px) {
+    .dashcontactIcons{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .dashfootIcon{
+        margin-bottom: 5px;
+    }
+  }
+  
+  
+  .dashcontactIcons{
+    color: #cccdd3;
+    margin-top: 15px;
+    
+    margin-bottom: 5px;
+  }
+  
+  .dashfootIcon{
+    margin-left: 40px;
+    margin-right: 40px;
+    transform: scale(1);
+  }
+  
+  .dashcopyright{
+    height: 50px;
+    text-align: center;
+   
+    color: #cccdd3;
+    font-size: 0.8rem;
+  }
+  
 

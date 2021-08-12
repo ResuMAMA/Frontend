@@ -286,6 +286,9 @@ html, body{
        margin:0 auto;
        /* width: 100%; */
   }
+  .sign-content a{
+    color: white;
+  }
 
   .sign-content:hover{background: rgba(255, 255, 255, 0.3); border:none;border-radius: 0;}
 
@@ -401,10 +404,12 @@ html, body{
   text-align: center;
   box-shadow: 0 10px 20px rgba(0,0,0,0.22), 0 6px 6px rgba(0,0,0,0.23);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
 }
 
 .temp-card:hover{
   box-shadow: 0 14px 28px rgba(0,0,0,0.32), 0 10px 10px rgba(0,0,0,0.22);
+  
 }
 
 .temp-card-img-container {

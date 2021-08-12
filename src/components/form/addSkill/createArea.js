@@ -18,7 +18,8 @@ function CreateArea(props) {
   return (
     <div class="skillcreateArea">
       <form>
-        <input
+        <input    
+        required="true"      
           name="skill"
           onChange={handleChange}
           value={skill}

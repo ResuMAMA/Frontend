@@ -71,7 +71,7 @@ function Template3(){
                   <div class="t3contentdiv">
     <h1>{data.name}</h1>
                         <div className="t3aboutcontent">{data.about}</div>
-                        <div className="t3hireme">Hire Me!</div>
+                        <div className="t3hireme"><a>Hire Me!</a></div>
                     </div>
                     <div class="t3photodiv">   
                     <div class="t3squareframe"> 
@@ -165,7 +165,7 @@ function Template3(){
                 <div>Mobile :{data.mobile}</div>
   </Popup>    
                  
-                  <a href={data.social_links.linkedIn}> <LinkedInIcon className="footIcon"/></a>
+                  <a href={data.social_links.linkedIn}><LinkedInIcon className="footIcon"/></a>
                   <a href={data.social_links.github}><GitHubIcon className="footIcon"/></a>
                   <a href={`mailto:${data.email}`}><MailOutlineIcon className="footIcon"></MailOutlineIcon></a>
                   </div>

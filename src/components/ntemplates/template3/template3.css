@@ -301,7 +301,11 @@
   font-family: 'Belleza', sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.t3hireme:hover{
+  background-color: #1d0b0b;
 }
 
 .t3photodiv{
@@ -651,9 +655,9 @@
 }
 
 .t3timeline-block-left {
-  float: left;
+  /* float: left; */
   direction: rtl
-}
+} 
 
 .t3marker {
   width: 16px;
@@ -764,6 +768,13 @@
     font-size: 0.8rem;
 }
 
+.temp3foot a{
+  color: white;
+}
+
+.temp3foot a:visited{
+  color: white;
+}
 
 
 

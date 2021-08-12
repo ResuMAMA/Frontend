@@ -7,7 +7,7 @@ import VisibilityIcon from '@material-ui/icons/Visibility';
 import ShareIcon from '@material-ui/icons/Share';
 import EditIcon from '@material-ui/icons/Edit';
 import Validate from '../../Validate'
-
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 function Dashboard(){
 
@@ -113,7 +113,14 @@ fetchData();
      </div>
        
     </div>
-    <div class="dash-foot">Copyright</div>
+    {/* <div class="dash-foot">Copyright</div> */}
+
+    <div className="dashfoot"> 
+                  <div className="dashcontactIcons">
+                    <MailOutlineIcon className="dashfootIcon"></MailOutlineIcon>
+                  </div>
+                  <div className="dashcopyright"> Copyright © Resumama.com</div>
+                </div>
   </div>
   );
 }

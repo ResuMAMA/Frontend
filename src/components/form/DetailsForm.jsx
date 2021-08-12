@@ -4,8 +4,7 @@ import SkillForm from '../form/addSkill/addSkillForm';
 import ExperienceForm from '../form/addExp/addExpForm';
 import ProjectForm from '../form/addProj/addProjForm';
 import Validate from '../../Validate';
-//import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-
+import ClearIcon from '@material-ui/icons/Clear';
 
 function DetailsForm(temp_no){
 useEffect(()=>{
@@ -84,19 +83,32 @@ return(
    <div class="form-div-external">
    <div class="formdiv-internal">
      <div class="form-main-div">
-
+     <div class="notedetails">
+           
+           <h2 class="bline">Important Points!</h2>
+           <ul>
+             <li>Fields marked with a red aestrick are required.</li>
+             <li>Type capital and small letters correctly.</li>
+             <li>Dimensions for Profile Picture: 210px x 210px.</li>
+             <li>Dimensions for Project Image: To be decided.</li>
+           </ul>
+           </div>
 
       <div class="basicdetails">
            
       <h2 class="bline">Basic Details</h2>
         <div class="basicdetailsdiv">
-        <input placeholder="Name....."  onChange={(e)=>setName(e.target.value)}></input>
-        <input placeholder="Email....." onChange={(e)=>setEmail(e.target.value)}></input>
-        <input placeholder="Contact....." onChange={(e)=>setMob(e.target.value)}></input>
-        <input placeholder={"LinkedIn....."} onChange={(e)=>setLinkedIn(e.target.value)}></input>
-        <input placeholder="Github....." onChange={(e)=>setGithub(e.target.value)}></input>
-        <input placeholder="Drive link for profile image....." onChange={(e)=>setProfileImage(
+        <div class="inputholder"> <div class="starHolder"><p>*</p></div><input class="basicinput" required placeholder="Name....." onChange={(e)=>setName(e.target.value)}></input></div>
+        <div class="inputholder"> <div class="starHolder"><p>*</p></div><input class="basicinput" required placeholder="Email....." onChange={(e)=>setEmail(e.target.value)}></input></div>
+        <div class="inputholder"> <div class="starHolder"><p>*</p></div><input class="basicinput" required placeholder="Contact....." onChange={(e)=>setMob(e.target.value)}></input></div>
+        <div class="inputholder"> <div class="starHolder"><p>*</p></div><input class="basicinput" required placeholder={"LinkedIn....."} onChange={(e)=>setLinkedIn(e.target.value)}></input></div>
+        <div class="inputholder"> <div class="starHolder"><p>*</p></div><input class="basicinput" required placeholder={"Resume Link....."} ></input></div>
+        <div class="inputholder"> 
+        <div class="starHolder"><p>*</p></div>
+        <input class="basicinput" required placeholder="Drive link for Profile Picture....." onChange={(e)=>setProfileImage(
           `https://drive.google.com/uc?export=view&id=${e.target.value.split("/")[5]}`)}></input>
+        </div>
+        <div class="inputholder"> <div class="starHolder"></div> <input placeholder="Github....." onChange={(e)=>setGithub(e.target.value)}></input></div>
         
       </div>       
 
@@ -106,7 +118,10 @@ return(
       <div class="aboutdetails">
            
            <h2 class="bline">About Yourself</h2>
-            <textarea placeholder="About....." onChange={(e)=>setAbout(e.target.value)} rows="5" ></textarea>
+           <div class="inputholder txtar"> 
+           <div class="starHolder"><p>*</p></div>
+           <textarea placeholder="About....." onChange={(e)=>setAbout(e.target.value)} rows="5" ></textarea>
+           </div>
            </div>
 
 
@@ -119,7 +134,10 @@ return(
         <div class="aboutdetails">
            
            <h2 class="bline">Title for Portfolio</h2>
+           <div class="inputholder txtar"> 
+           <div class="starHolder"><p>*</p></div>
             <textarea placeholder="Title....." onChange={(e)=>setTitle(e.target.value)} rows="2" ></textarea>
+           </div>
            </div>
         
      </div>
@@ -127,9 +145,9 @@ return(
           
     </div>
     <button class="form-submit-button" onClick={handleSubmit}> Submit</button>
-    <div class="formfooter">
+    {/* <div class="formfooter">
     Copyright © Resumama
-    </div>
+    </div> */}
    </div> 
     
 )

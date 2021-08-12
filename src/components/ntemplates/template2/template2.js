@@ -71,7 +71,7 @@ function Template1(){
                     <div class="contentdiv">
     <h1>{data.name}</h1>
                         <div className="aboutcontent">{data.about}</div>
-                        <div className="hireme">Hire Me!</div>
+                        <div className="hireme"><a>Hire Me!</a></div>
                     </div>
                     <div class="photodiv">   
                     <div class="squareframe"> 
@@ -162,10 +162,10 @@ function Template1(){
                 <div className="temp1foot" id="t1contact"> 
                   <div className="contactIcons">
                   <Popup trigger={<PhoneIcon className="footIcon"></PhoneIcon>} position="left center">
-                <div>Mobile :{data.mobile}</div>
+                <div>Mobile:{data.mobile}</div>
   </Popup>    
                  
-                  <a href={data.social_links.linkedIn}> <LinkedInIcon className="footIcon"/></a>
+                  <a href={data.social_links.linkedIn}><LinkedInIcon className="footIcon"/></a>
                   <a href={data.social_links.github}><GitHubIcon className="footIcon"/></a>
                   <a href={`mailto:${data.email}`}><MailOutlineIcon className="footIcon"></MailOutlineIcon></a>
                   </div>
