@@ -6,6 +6,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import MenuIcon from '@material-ui/icons/Menu';
 import $ from "jquery";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 function Template1(){
       
@@ -159,12 +161,15 @@ function Template1(){
 
                 <div className="temp1foot" id="t1contact"> 
                   <div className="contactIcons">
-                  <PhoneIcon className="footIcon"></PhoneIcon>
-                  <LinkedInIcon className="footIcon"><a href={data.social_links.linkedIn}></a></LinkedInIcon>
-                  <GitHubIcon className="footIcon"><a href={data.social_links.github}></a></GitHubIcon>
-                  <MailOutlineIcon className="footIcon"></MailOutlineIcon>
+                  <Popup trigger={<PhoneIcon className="footIcon"></PhoneIcon>} position="left center">
+                <div>Mobile :{data.mobile}</div>
+  </Popup>    
+                 
+                  <a href={data.social_links.linkedIn}> <LinkedInIcon className="footIcon"/></a>
+                  <a href={data.social_links.github}><GitHubIcon className="footIcon"/></a>
+                  <a href={`mailto:${data.email}`}><MailOutlineIcon className="footIcon"></MailOutlineIcon></a>
                   </div>
-                  <div className="copyright"> ©Copyright SoniaVerma.com</div>
+                  <div className="copyright"> ©Copyright {data.name}.com</div>
                 </div>
             </div>}
                 </div>

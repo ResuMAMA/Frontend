@@ -6,6 +6,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import MenuIcon from '@material-ui/icons/Menu';
 import $ from "jquery";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 function Template3(){
       
@@ -159,10 +161,13 @@ function Template3(){
 
                 <div className="temp3foot" id="t3contact"> 
                   <div className="t3contactIcons">
-                  <PhoneIcon className="t3footIcon"></PhoneIcon>
-                  <LinkedInIcon className="t3footIcon"><a href={data.social_links.linkedIn}></a></LinkedInIcon>
-                  <GitHubIcon className="t3footIcon"><a href={data.social_links.github}></a></GitHubIcon>
-                  <MailOutlineIcon className="t3footIcon"></MailOutlineIcon>
+                  <Popup trigger={<PhoneIcon className="footIcon"></PhoneIcon>} position="left center">
+                <div>Mobile :{data.mobile}</div>
+  </Popup>    
+                 
+                  <a href={data.social_links.linkedIn}> <LinkedInIcon className="footIcon"/></a>
+                  <a href={data.social_links.github}><GitHubIcon className="footIcon"/></a>
+                  <a href={`mailto:${data.email}`}><MailOutlineIcon className="footIcon"></MailOutlineIcon></a>
                   </div>
                   <div className="t3copyright"> ©Copyright SoniaVerma.com</div>
                 </div>

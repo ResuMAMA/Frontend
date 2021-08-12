@@ -9,7 +9,10 @@ import MenuIcon from '@material-ui/icons/Menu';
 
 
 function LandingPage() {
-        
+             
+      /**   checking logged in status */
+      const userId=localStorage.getItem("userid");
+      
          /*---------------Navbar logic------------*/ 
         function callogin(){
           const element = document.getElementById("myNav");
@@ -76,12 +79,14 @@ function LandingPage() {
         
       
       <div class="sign-div">
-   
+       {
+         userId?<div class="sign-content" ><a href="/dashboard/dashboard">
+         Dashboard</a></div>:
         <div class="sign-content" onClick={callogin}>
         Sign-up
         <LockOpenIcon className="lock" />
         </div>
-
+         }
       </div>
     </div>
        
