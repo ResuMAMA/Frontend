@@ -30,7 +30,7 @@ function Template1(){
             method:"GET",
             headers:{
             "Content-Type":"application/json",
-            "portfolio_id":"6111684e0d368a1638a183c4"
+            "portfolio_id":id
          }
         })
         
@@ -58,7 +58,7 @@ function Template1(){
                 <div className="temp1head canvasBox">                 
                 <nav className="temp1nav" >
                     <ul >
-            <li class="Temp1Logo">{data.name}</li>
+            <li class="Temp1Logo">{data.name.split(" ")[0]}</li>
                         <li className="Temp1navItem"> <a href="#t1head">About</a></li>
                         <li className="Temp1navItem"> <a href="#t1skill">Skills</a></li>
                         <li className="Temp1navItem"> <a href="#t1project">Projects</a></li>
@@ -71,7 +71,7 @@ function Template1(){
                     <div class="contentdiv">
     <h1>{data.name}</h1>
                         <div className="aboutcontent">{data.about}</div>
-                        <div className="hireme"><a>Hire Me!</a></div>
+                        <div className="hireme"><a target="_blank" href={data.resumeLink}>Hire Me!</a></div>
                     </div>
                     <div class="photodiv">   
                     <div class="squareframe"> 
