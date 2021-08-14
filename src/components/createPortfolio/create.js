@@ -33,7 +33,7 @@ return (
       </div>              
   </div>
   <div class="portfolioAlbumPage-template-content">  
-          <h3>Enter Number of the Template You want to select!<br /><input placeholder="Template number"
+          <h3>Enter Number of the Template You want to select!<br /><input placeholder="Template number" required
            onChange={(e)=>setTemp_no(e.target.value)}
           ></input></h3>
       </div>

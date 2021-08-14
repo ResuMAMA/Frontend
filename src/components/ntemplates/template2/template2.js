@@ -162,7 +162,7 @@ function Template1(){
                 <div className="temp1foot" id="t1contact"> 
                   <div className="contactIcons">
                   <Popup trigger={<PhoneIcon className="footIcon"></PhoneIcon>} position="left center">
-                <div>Mobile:{data.mobile}</div>
+                <div>{data.mobile}</div>
   </Popup>    
                  
                   <a href={data.social_links.linkedIn}><LinkedInIcon className="footIcon"/></a>

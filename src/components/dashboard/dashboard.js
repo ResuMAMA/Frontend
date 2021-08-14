@@ -51,7 +51,7 @@ fetchData();
     <div class="LOGO">
         {/* <img class="dash-logo-img" src="/img/b-r.png"></img> */}
         <p class="dash-logo-img"> Resumama</p>
-       <div className="chnglogo"> <PhoneIphoneIcon /> </div> 
+       <div className="chnglogo"> R</div> 
     </div>
 
       <div class="dash-name-div">      
@@ -81,35 +81,82 @@ fetchData();
 
      <div class="dash-container">
   <main class="grid">
+    
   {loading?<h1>Loading......</h1>:  
   
     data.map((item,index)=>
     <article>
-      <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" />
-      <div class="text">
-        <p>{item.title}</p>
+    <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div>
+      <div class="texTitle">{item.title}</div>
         <div class="bottom-bar">
          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
          <div class="share bottom-bar-icon"><button onClick={(e)=>alert("Link to your portfolio: "+`localhost:3000/Template${item.template_no}/my_portfolio/${item._id}`)}><ShareIcon/></button></div>
-         <div class="edit bottom-bar-icon"><EditIcon /></div>
-        </div>
-      </div>
+        </div>      
     </article>)}
-    <article class="createCard">
-    <img src="/img/logo.png" alt="Sample photo" />
-      <div class="text">
-      <p>Create Portfolio</p>
-      <div class="bottom-bar">
-         <div class="add bottom-bar-icon"><button onClick={()=>window.location="/createPortfolio/create"}><AddToPhotosIcon /></button></div>
-      </div>
-      </div>
+
+    <article>
+    <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div>
+    <div class="texTitle">urna. Suspendisse</div>
+     <div class="bottom-bar">
+          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
+          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
+    </div>    
+    </article>
+
+    <article>
+    <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div>
+    <div class="texTitle">Template 1 </div>
+     <div class="bottom-bar">
+          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
+          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
+    </div>    
+    </article>
+
+    <article>
+    <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div>
+    <div class="texTitle">Template 1 </div>
+     <div class="bottom-bar">
+          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
+          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
+    </div>    
+    </article>
+
+    <article>
+    <div class="tempPic"> <img src="https://vinusimages.co/wp-content/uploads/2018/10/EG7A2390.jpgA_.jpg" alt="Sample photo" /> </div>
+    <div class="texTitle">urna. Suspendisse</div>
+     <div class="bottom-bar">
+          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
+          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
+    </div>    
+    </article>
+
+    <article>
+    <div class="tempPic"> <img src="/img/sonia.jpg" alt="Sample photo" /> </div>
+    <div class="texTitle"> urna. Suspendisse</div>
+     <div class="bottom-bar">
+          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
+          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
+    </div>    
+    </article>
+
+    <article class="createCard"> 
+    {/* <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div> */}
+    <div class="texTitle"><p>Create<br /> Portfolio</p></div>
+    <div class="dtext">
+        
+        <div class="bottom-bar">
+        <div class="add bottom-bar-icon"><button onClick={()=>window.location="/createPortfolio/create"}><AddToPhotosIcon /></button></div>
+        </div>
+    </div>
     </article>
 
   </main>
 </div>
 
      </div>
-       <div class="quotes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec elit urna. Suspendisse a erat a nibh imperdiet fermentum. In eleifend ultricies massa, id pretium purus convallis nec.</div>
+       <div class="quotes"><p>
+      Share your portfolio website and<br /> ace that interview. <br /><span>Resumama</span><br /> believes in you. <br />Good luck!
+       </p></div>
      </div>
        
     </div>

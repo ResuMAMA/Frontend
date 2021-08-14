@@ -6,6 +6,7 @@ import $ from 'jquery';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 import MenuIcon from '@material-ui/icons/Menu';
+import ReactPlayer from 'react-player';
 
 
 function LandingPage() {
@@ -41,7 +42,7 @@ function LandingPage() {
           }
 
 
-
+          $(".myVideo").controls = false;
          
 
 
@@ -124,13 +125,13 @@ function LandingPage() {
             <div className="temp-Grid">
                 <div className="temp-card">
                    <div  className="temp-card-img-container">
-                   {/* <img src="/img/sonia.jpg"></img> */}
+                   <img src="/img/sonia.jpg"></img>
                    </div>
                    <div className="temp-card-content">Classy and Elegant</div>
                 </div>
                 <div className="temp-card">
                    <div  className="temp-card-img-container">
-                   {/* <img src="/img/sonia.jpg"></img> */}
+                   <img src="/img/sonia.jpg"></img>
                    </div>
                    <div className="temp-card-content">That wow factor</div>
                 </div>                     
@@ -153,8 +154,20 @@ function LandingPage() {
         {/* ------------------------------------------------------------------Responsive---------------------------------------------------------- */}
 
         <div class="response-main" id="responsediv">
-        {/* <div class="response-text"><p>RESPONSIVE</p></div>
-        <div class="animation"><p>ANIMATION</p></div> */}
+        <div class="template-content">
+              <h1>Completely Responsive <br /> Portfolio Templates</h1>
+              <h4>share your personal website with anyone without worrying <br /> <span>about the distortion </span>of your website</h4>
+          </div>
+          <div class="vid">         
+            {/* <video class="myVideo" width="400" height="400" autoplay="autoplay" loop>
+              <source src="img/respo.mp4" type="video/mp4" />
+            </video> */}
+                 
+                 <ReactPlayer class="myVideo" url="img/respo.mp4" width="400px" height="400px" controls={true} playing={true} loop={true}/>
+
+
+
+          </div>
       </div>
              
         

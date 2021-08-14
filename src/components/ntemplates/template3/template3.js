@@ -161,13 +161,13 @@ function Template3(){
 
                 <div className="temp3foot" id="t3contact"> 
                   <div className="t3contactIcons">
-                  <Popup trigger={<PhoneIcon className="footIcon"></PhoneIcon>} position="left center">
-                <div>Mobile :{data.mobile}</div>
+                  <Popup trigger={<PhoneIcon className="t3footIcon"></PhoneIcon>} position="left center">
+                <div>{data.mobile}</div>
   </Popup>    
                  
-                  <a href={data.social_links.linkedIn}><LinkedInIcon className="footIcon"/></a>
-                  <a href={data.social_links.github}><GitHubIcon className="footIcon"/></a>
-                  <a href={`mailto:${data.email}`}><MailOutlineIcon className="footIcon"></MailOutlineIcon></a>
+                  <a href={data.social_links.linkedIn}><LinkedInIcon className="t3footIcon"/></a>
+                  <a href={data.social_links.github}><GitHubIcon className="t3footIcon"/></a>
+                  <a href={`mailto:${data.email}`}><MailOutlineIcon className="t3footIcon"></MailOutlineIcon></a>
                   </div>
                   <div className="t3copyright"> ©Copyright SoniaVerma.com</div>
                 </div>

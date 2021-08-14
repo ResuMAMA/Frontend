@@ -753,11 +753,17 @@
     margin-top: 60px;
     margin-bottom: 50px;
 }
+/*  
+.mmob:hover{
+  cursor: pointer;
+} */
+
 
 .t3footIcon{
     margin-left: 40px;
     margin-right: 40px;
     transform: scale(0.8);
+    cursor: pointer;
 }
 
 .t3copyright{

@@ -1,13 +1,26 @@
 
   .chnglogo{
     display: none;
+    font-family: 'Allura', cursive;
+     color: black;
+     font-size: 1.2rem;
+     font-weight: 600;
+     border: solid black 1px;
+     border-radius: 20px;
+     width: 40px;
+     height: 40px;
+     text-align: center;
+
   }
   @media(max-width:600px){
     .dash-logo-img{
       display: none;
+      margin-left: 3px;
     }
     .chnglogo{
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
   }
@@ -57,7 +70,7 @@
     .LOGO p{
       font-family: 'Allura', cursive;
      color: black;
-     font-size: 1.6rem;
+     font-size: 1.5rem;
      font-weight:600;
     }
 
@@ -365,13 +378,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3%;
-    background-color: #FCD8D4;
+    padding: 2%;
+    background-color: #ffefee;
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    color: rgb(99, 96, 96);
+  }
+
+  .quotes p{
+    text-align: center;
+  }
+
+  .quotes span{
+    font-family: 'Allura', cursive;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    letter-spacing: 0.03rem;
+    color: rgb(255, 146, 146);
   }
 
 
@@ -380,6 +411,7 @@
     height: 100%;
     padding: 20px ;
     background-color: #f7f4f4;
+    /* #f7f4f4; */
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
 
@@ -399,7 +431,10 @@
     border-radius: 10px;
     background-color: white;
     transition: .5s;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
    }
 
   .grid article:hover{
@@ -407,60 +442,113 @@
     transform: scale(1.05,1.05);
   }
   
-  .grid > article img {
-    max-width: 100%;
+  .grid article .tempPic{
+    width: 100%;
     border-radius:5px 5px 0 0;
-    
-  }
+    /* min-height: 210px; */
+    /* flex: 3; */
+    /* margin-bottom: auto;
+    margin-top: 0; */
+    }
+ 
   
-  .grid .text {
+   .grid article .tempPic img {
+    border-radius:5px 5px 0 0;
+    width:100%;   
+    /* height: 100%;  */
+    
+  } 
+ 
+    .grid article .dtext {
     display: flex;
     align-items: center;
-    justify-content: end;
     flex-direction: column;
-  }
-   
-  .text > p{
-    font-size: 0.9rem;
-    margin: 8px;
+    position: relative;
+    justify-content: stretch;
+    width: 100%;
+    /* min-height: 40px; */
+    /* flex: 1; */
+    margin-top: auto;
+    margin-bottom: 0;
   }
 
+  .texTitle{
+    width: 100%;
+    /* min-height: 40px; */
+    padding: 10px 13px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+    line-height: 1rem;
+    color: #6d84ec;
+  }
+
+  .grid .createCard .texTitle{
+    height: 170px;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: 0.05rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+ 
+  .grid .createCard .texTitle p{
+    text-align: center;
+  }
+   
   .bottom-bar{
     background-color: #2940D3;
-    max-height: 30px;
+    height: 40px;
     width: 100%;
     border-radius: 0 0 5px 5px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 10px 0 0 0;
+    /* margin: 10px 0 0 0; */
+    /* position: absolute;
+    bottom: 0; */
   }
 
   .bottom-bar-icon{
     color: white;
-    transform: scale(0.6);
+    transform: scale(0.7);
+    cursor: pointer;
   }
   .bottom-bar-icon:hover{
-    color: rgb(37, 218, 37);
+    color: rgb(89, 199, 243);
+  }
+
+  /* .createCard{
+
   }
    .createCard .bottom-bar{
+     width: 100%;
      margin-bottom: 5px;
+   } */
+
+   .bottom-bar-icon button{
+     background: none;
+     border: none;
+     color: white;
+     cursor: pointer;
    }
 
-  /* ----------------------------------------------------footer---------------------------------------------------------------- */
-  /* .dash-foot{
-    height: 80px;
-    margin-top: auto;
-    width: 100%;
-    background-color: #2940d3;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-  } */
+   .bottom-bar-icon button:hover{
+     color: rgb(89, 199, 243);
+   }
+   
+   .bottom-bar .add{
+    transform: scale(0.9);
+   }
 
+   .grid .createCard .bottom-bar{
+     height: 60px;
+   }
+    
+  /* ----------------------------------------------------footer---------------------------------------------------------------- */
 
   .dashfoot{
     height: 90px;

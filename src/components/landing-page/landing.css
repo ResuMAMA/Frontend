@@ -50,7 +50,7 @@ html, body{
 }
 .Head-div a{
   text-decoration: none;
-  
+  color:#94c5fd;
 }
 
 .Head-div a:visited{
@@ -611,37 +611,45 @@ html, body{
 
 .response-main{
   width: 100%;
-  min-height: 80vh;
-  background-color: #495cdb;
+  min-height: 70vh;
+  background-color: #4086f3;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
-/* .response-text{
-  background-color: #CAC7C7;
-  border: 1px solid;
-  border-radius: 30px;
-  height: 600px;
-  width: 600px;
-  text-align: center;
-  margin-right:50px;
-}
-.animation{
-  background-color: #CAC7C7;
-  border: 1px solid;
-  border-radius: 30px;
-  height: 600px;
-  width: 600px;
-  text-align: center;
-}
-.mode-main{
-  background-color: white;
-}
-.mode-text{
-  background-color: teal;
-} */
 
+.response-main .template-content{
+  margin: 20px;
+}
 
+.response-main .template-content h1{
+   color: #fdbc05;
+}
+
+.response-main .template-content h4{
+  color: #132fe2;
+  font-weight: 600;
+  
+}
+
+.response-main .template-content span{
+  color: #ffffff;
+  font-weight: 600;
+  
+}
+
+@media (max-width:1028px) {
+  .response-main .template-content{
+    margin-top: 80px;
+  }
+}
+
+@media(max-width:406px){
+  .response-main .vid video{
+  transform: scale(0.7);
+}
+}
 
 /* ---------------------------------------------Login css --------------------------------------------*/
 
