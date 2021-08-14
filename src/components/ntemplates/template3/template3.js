@@ -30,7 +30,7 @@ function Template3(){
             method:"GET",
             headers:{
             "Content-Type":"application/json",
-            "portfolio_id":"6111684e0d368a1638a183c4"
+            "portfolio_id":id
          }
         })
         
@@ -58,7 +58,7 @@ function Template3(){
                 <div className="temp3head canvasBox">                 
                 <nav className="temp3nav" >
                     <ul >
-            <li class="Temp3Logo">{data.name}</li>
+            <li class="Temp3Logo">{data.name.split(" ")[0]}</li>
                         <li className="Temp3navItem"> <a href="#t3head">About</a></li>
                         <li className="Temp3navItem"> <a href="#t3skill">Skills</a></li>
                         <li className="Temp3navItem"> <a href="#t3project">Projects</a></li>
@@ -71,7 +71,7 @@ function Template3(){
                   <div class="t3contentdiv">
     <h1>{data.name}</h1>
                         <div className="t3aboutcontent">{data.about}</div>
-                        <div className="t3hireme"><a>Hire Me!</a></div>
+                        <div className="t3hireme"><a target="_blank" href={data.resumeLink}>Hire Me!</a></div>
                     </div>
                     <div class="t3photodiv">   
                     <div class="t3squareframe"> 
@@ -169,7 +169,7 @@ function Template3(){
                   <a href={data.social_links.github}><GitHubIcon className="t3footIcon"/></a>
                   <a href={`mailto:${data.email}`}><MailOutlineIcon className="t3footIcon"></MailOutlineIcon></a>
                   </div>
-                  <div className="t3copyright"> ©Copyright SoniaVerma.com</div>
+                  <div className="t3copyright"> ©Copyright {data.name}.com</div>
                 </div>
             </div>}
                 </div>

@@ -24,6 +24,7 @@ const [experiences, setExp] = useState([]);
 const [projects, setProj] = useState([]);
 const [skills, setSkill] = useState([]);
 const [title,setTitle]=useState("");
+const [resumeLink,setResumeLink]=useState("");
 
 const user_id=localStorage.getItem("userid");
 const token=localStorage.getItem("token");
@@ -57,7 +58,8 @@ async function handleSubmit(){
        experience:experiences,
        projects:myProjects,
        template_no:temp_no.temp_no,
-       title:title
+       title:title,
+       resumeLink:resumeLink
       }
   // console.log(portfolio);
    const response=await fetch("http://localhost:5000/portfolios/create_new",{
@@ -102,7 +104,7 @@ return(
         <div class="inputholder"> <div class="starHolder"><p>*</p></div><input class="basicinput" required placeholder="Email....." onChange={(e)=>setEmail(e.target.value)}></input></div>
         <div class="inputholder"> <div class="starHolder"><p>*</p></div><input class="basicinput" required placeholder="Contact....." onChange={(e)=>setMob(e.target.value)}></input></div>
         <div class="inputholder"> <div class="starHolder"><p>*</p></div><input class="basicinput" required placeholder={"LinkedIn....."} onChange={(e)=>setLinkedIn(e.target.value)}></input></div>
-        <div class="inputholder"> <div class="starHolder"><p>*</p></div><input class="basicinput" required placeholder={"Resume Link....."} ></input></div>
+        <div class="inputholder"> <div class="starHolder"><p>*</p></div><input class="basicinput" required placeholder={"Resume Link....."} onChange={(e)=>setResumeLink(e.target.value)}></input></div>
         <div class="inputholder"> 
         <div class="starHolder"><p>*</p></div>
         <input class="basicinput" required placeholder="Drive link for Profile Picture....." onChange={(e)=>setProfileImage(
