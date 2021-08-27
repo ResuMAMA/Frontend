@@ -163,7 +163,7 @@ function LandingPage() {
               <source src="img/respo.mp4" type="video/mp4" />
             </video> */}
                  
-                 <ReactPlayer class="myVideo" url="img/respo.mp4" width="400px" height="400px" controls={true} playing={true} loop={true}/>
+                 <ReactPlayer class="myVideo" url="img/respo.mp4" width="400px" height="400px"  muted={true} playing={true} loop={true}/>
 
 
 
