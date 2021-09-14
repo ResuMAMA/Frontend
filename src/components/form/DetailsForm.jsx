@@ -62,7 +62,7 @@ async function handleSubmit(){
        resumeLink:resumeLink
       }
   // console.log(portfolio);
-   const response=await fetch("http://localhost:5000/portfolios/create_new",{
+   const response=await fetch("https://resumamabackend.herokuapp.com/portfolios/create_new",{
     method:"POST",
     headers:{
     "Content-Type":"application/json",

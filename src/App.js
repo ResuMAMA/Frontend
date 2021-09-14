@@ -22,7 +22,7 @@ function App() {
          <Route path="/form" component={Schema}/>
        
          <Route path="/Template1/my_portfolio/*" component={Template1}/>
-         <Route path="/Template3/my_portfolio/*" component={Template3}/>
+         <Route path="/Template2/my_portfolio/*" component={Template3}/>
          <Route path="/forgotPassword" component={ForgotPassword}/>
          <Route path="/changePassword" component={ChangePassword}/>
       </Switch>

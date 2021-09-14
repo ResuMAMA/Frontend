@@ -19,7 +19,7 @@ useEffect(()=>{
     const user_id=localStorage.getItem("userid");
     const token=localStorage.getItem("token")
     async function fetchData(){
-      const response=await fetch("http://localhost:5000/portfolios/myportfolios",{
+      const response=await fetch("https://resumamabackend.herokuapp.com/portfolios/myportfolios",{
           method:"GET",
           headers:{
           "Content-Type":"application/json",
@@ -89,55 +89,11 @@ fetchData();
     <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div>
       <div class="texTitle">{item.title}</div>
         <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><VisibilityIcon /></div>
+         <div class="view bottom-bar-icon"><a style={{color:"white"}}target="_blank" href={`localhost:3000/Template${item.template_no}/my_portfolio/${item._id}`}><VisibilityIcon /></a></div>
          <div class="share bottom-bar-icon"><button onClick={(e)=>alert("Link to your portfolio: "+`localhost:3000/Template${item.template_no}/my_portfolio/${item._id}`)}><ShareIcon/></button></div>
         </div>      
     </article>)}
 
-    <article>
-    <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div>
-    <div class="texTitle">urna. Suspendisse</div>
-     <div class="bottom-bar">
-          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
-    </div>    
-    </article>
-
-    <article>
-    <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div>
-    <div class="texTitle">Template 1 </div>
-     <div class="bottom-bar">
-          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
-    </div>    
-    </article>
-
-    <article>
-    <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div>
-    <div class="texTitle">Template 1 </div>
-     <div class="bottom-bar">
-          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
-    </div>    
-    </article>
-
-    <article>
-    <div class="tempPic"> <img src="https://vinusimages.co/wp-content/uploads/2018/10/EG7A2390.jpgA_.jpg" alt="Sample photo" /> </div>
-    <div class="texTitle">urna. Suspendisse</div>
-     <div class="bottom-bar">
-          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
-    </div>    
-    </article>
-
-    <article>
-    <div class="tempPic"> <img src="/img/sonia.jpg" alt="Sample photo" /> </div>
-    <div class="texTitle"> urna. Suspendisse</div>
-     <div class="bottom-bar">
-          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
-    </div>    
-    </article>
 
     <article class="createCard"> 
     {/* <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div> */}

@@ -7,7 +7,7 @@ function ForgotPassword(){
 
       async function handlesubmit(e){
           e.preventDefault();
-          const response= await fetch("http://localhost:5000/auth/forgotPassword",{
+          const response= await fetch("https://resumamabackend.herokuapp.com/auth/forgotPassword",{
               method:"POST",
               headers:{
                 "Content-Type":"application/json"

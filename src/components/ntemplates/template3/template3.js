@@ -26,7 +26,7 @@ function Template3(){
         //console.log(url)
        
         async function fetchData(){
-        const response=await fetch("http://localhost:5000/portfolios/portfolio.me",{
+        const response=await fetch("https://resumamabackend.herokuapp.com/portfolios/portfolio.me",{
             method:"GET",
             headers:{
             "Content-Type":"application/json",
