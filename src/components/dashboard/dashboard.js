@@ -94,7 +94,6 @@ fetchData();
         </div>      
     </article>)}
 
-<<<<<<< HEAD
     {/* <article>
     <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div>
     <div class="texTitle">urna. Suspendisse</div>
@@ -139,8 +138,6 @@ fetchData();
           <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
     </div>    
     </article> */}
-=======
->>>>>>> 7d77a18d289c3a67670e3728c4e373f2ab19d022
 
     <article class="createCard"> 
     {/* <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div> */}

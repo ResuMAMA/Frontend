@@ -14,7 +14,7 @@ function Template3(){
     
 
     function phoneview(){                             //for navbar
-    console.log("sdsjfhjf");
+    // console.log("sdsjfhjf");
     $('.Temp3navItem').toggleClass("show");
     }
     //states
@@ -48,7 +48,7 @@ function Template3(){
     
        
     },[])
-
+// console.log(data.profileImage_url);
     return (
         
       
@@ -80,7 +80,7 @@ function Template3(){
                     <div class="t3lwhitesquare"></div>
                     <div class="t3greensquare"></div>
                     <div class="t3imgholder">
-                     <img src="/img/sonia.jpg" />
+                     <img src={`https://drive.google.com/uc?export=view&id=${data.profileImage_url.split("/")[5]}`} />
                     </div>
                   </div>
                 </div>
