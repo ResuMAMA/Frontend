@@ -10,7 +10,7 @@ function Project(props) {
    return (
      <div className="proj-grid-item">
       <div className="proj-grid-card-img-container">
-            <img src="/img/form.png"></img>
+            <img src={ `https://drive.google.com/uc?export=view&id=${props.img.split("/")[5]}`}></img>
       </div>
       <div className="proj-grid-card-content">
                         

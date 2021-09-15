@@ -15,7 +15,7 @@ function Template1(){
     
 
     function phoneview(){                             //for navbar
-    console.log("sdsjfhjf");
+    // console.log("sdsjfhjf");
     $('.Temp1navItem').toggleClass("show");
     }
     //states
@@ -49,7 +49,7 @@ function Template1(){
     
        
     },[])
-
+    // console.log(data.projects);
     return (
         
       
@@ -81,7 +81,7 @@ function Template1(){
                     <div class="lwhitesquare"></div>
                     <div class="greensquare"></div>
                     <div class="imgholder">
-                     <img src="https://drive.google.com/uc?export=view&id=1SKXpCCo4OANHOlBcXNJyyPuLcNRQGIWq" />
+                     <img src={data.profileImage_url}/>
                     </div>
                   </div>
                 </div>
