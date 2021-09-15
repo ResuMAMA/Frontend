@@ -80,7 +80,7 @@ function Template1(){
                     <div class="lwhitesquare"></div>
                     <div class="greensquare"></div>
                     <div class="imgholder">
-                     <img src={ `https://drive.google.com/uc?export=view&id=${data.profileImage_url.split("/")[5]}`} />
+                     <img src={data.profileImage_url} />
                     </div>
                   </div>
                 </div>
