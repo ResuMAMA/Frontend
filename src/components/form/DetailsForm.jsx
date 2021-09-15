@@ -36,7 +36,7 @@ async function handleSubmit(){
       const obj={
         title:item.title,
         description:item.description,
-        img:`https://drive.google.com/uc?export=view&id=${item.img.split("/")[5]}`
+        image_url:`https://drive.google.com/uc?export=view&id=${item.img.split("/")[5]}`
       }
       myProjects.push(obj)
      // item.img=`https://drive.google.com/uc?export=view&id=${item.img.split("/")[5]}`
