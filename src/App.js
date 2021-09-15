@@ -19,8 +19,7 @@ function App() {
          <Route exact path="/" component={LandingPage}/>
          <Route path="/dashboard" component={Dashboard}/>
          <Route path="/createPortfolio" component={Create}/>
-         <Route path="/form" component={Schema}/>
-       
+         <Route path="/form" component={Schema}/>       
          <Route path="/Template1/my_portfolio/*" component={Template1}/>
          <Route path="/Template3/my_portfolio/*" component={Template3}/>
          <Route path="/forgotPassword" component={ForgotPassword}/>

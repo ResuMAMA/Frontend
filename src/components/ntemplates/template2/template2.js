@@ -114,14 +114,19 @@ function Template1(){
                 <div className="proj-Grid">
                     {data.projects.map((item,index)=>
                                     <div className="proj-card">
-                        <div style={{backgroundImage: `url("https://drive.google.com/uc?export=view&id=1SKXpCCo4OANHOlBcXNJyyPuLcNRQGIWq")`}} className="proj-card-img-container">
+                        {/* <div style={{backgroundImage: `url("https://drive.google.com/uc?export=view&id=1SKXpCCo4OANHOlBcXNJyyPuLcNRQGIWq")`}} className="proj-card-img-container">
                         
+                        </div> */}
+                           
+                        <div className="proj-card-img-container">
+                          <img src="/img/temprem.png"></img>
                         </div>
+
                         <div className="proj-card-content">
-                        
+                        {/* <div> */}
                          <h1>{item.title}</h1>
                         <p className="proj-excerpt">{item.description}</p>
-                        
+                        {/* </div> */}
                         </div>
                     </div>
                     )}

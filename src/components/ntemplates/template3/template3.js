@@ -114,15 +114,21 @@ function Template3(){
                 <div className="t3proj-Grid">
                     {data.projects.map((item,index)=>
                                     <div className="t3proj-card">
-                        <div style={{backgroundImage: `url("https://drive.google.com/uc?export=view&id=1SKXpCCo4OANHOlBcXNJyyPuLcNRQGIWq")`}} className="t3proj-card-img-container">
+                        {/* <div style={{backgroundImage: `url("https://drive.google.com/uc?export=view&id=1SKXpCCo4OANHOlBcXNJyyPuLcNRQGIWq")`}} className="t3proj-card-img-container">
+                          
+                        </div> */}
                         
+                        <div className="t3proj-card-img-container">
+                          <img src="/img/temprem.png"></img>
                         </div>
+
+
                         <div className="t3proj-card-content">
-                        
-                         <h1>{item.title}</h1>
+                        {/* <div> */}
+                        <h1>{item.title}</h1>
                         <p className="t3proj-excerpt">{item.description}</p>
-                        
                         </div>
+                        {/* </div> */}
                     </div>
                     )}
                    

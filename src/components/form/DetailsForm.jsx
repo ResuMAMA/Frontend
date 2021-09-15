@@ -91,8 +91,9 @@ return(
            <ul>
              <li>Fields marked with a red aestrick are required.</li>
              <li>Type capital and small letters correctly.</li>
-             <li>Dimensions for Profile Picture: 210px x 210px.</li>
-             <li>Dimensions for Project Image: To be decided.</li>
+             <li>Provide <span style={{color:"red"}}>viewable drive link</span> for images.</li>
+             <li>Dimensions for Profile Picture: <span style={{color:"red"}}>210px x 210px.</span></li>
+             <li>Dimensions for Project Image: <span style={{color:"red"}}>500px x 500px.</span></li>
            </ul>
            </div>
 

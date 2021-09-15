@@ -29,7 +29,7 @@ useEffect(()=>{
       })
      // console.log(response)
       const realdata=await response.json();
-      //console.log(realdata)
+      console.log(realdata)
       setData(realdata)
       if(data!==null){
       setTimeout(()=>{
@@ -94,7 +94,7 @@ fetchData();
         </div>      
     </article>)}
 
-    <article>
+    {/* <article>
     <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div>
     <div class="texTitle">urna. Suspendisse</div>
      <div class="bottom-bar">
@@ -137,7 +137,7 @@ fetchData();
           <div class="view bottom-bar-icon"><VisibilityIcon /></div>
           <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
     </div>    
-    </article>
+    </article> */}
 
     <article class="createCard"> 
     {/* <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div> */}

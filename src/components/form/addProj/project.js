@@ -8,9 +8,9 @@ function Project(props) {
   }
 
    return (
-    <div className="proj-grid-item">
+     <div className="proj-grid-item">
       <div className="proj-grid-card-img-container">
-                        
+            <img src="/img/form.png"></img>
       </div>
       <div className="proj-grid-card-content">
                         
@@ -19,7 +19,6 @@ function Project(props) {
       <DeleteOutlineIcon className="projdeleteicon" onClick={handleClick} />
       </div>
     </div>
-
   );
 }
 
