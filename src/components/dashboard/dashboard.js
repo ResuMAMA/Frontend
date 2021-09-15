@@ -9,6 +9,8 @@ import EditIcon from '@material-ui/icons/Edit';
 import Validate from '../../Validate'
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
+import ClipLoader from "react-spinners/ClipLoader";
+
 function Dashboard(){
 
 //logic---> fetch all the portfolios of the loggedIn user
@@ -82,7 +84,7 @@ fetchData();
      <div class="dash-container">
   <main class="grid">
     
-  {loading?<h1>Loading......</h1>:  
+  {loading? <ClipLoader loading={loading} size={70} />:  
   
     data.map((item,index)=>
     <article>
@@ -94,50 +96,6 @@ fetchData();
         </div>      
     </article>)}
 
-    {/* <article>
-    <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div>
-    <div class="texTitle">urna. Suspendisse</div>
-     <div class="bottom-bar">
-          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
-    </div>    
-    </article>
-
-    <article>
-    <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div>
-    <div class="texTitle">Template 1 </div>
-     <div class="bottom-bar">
-          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
-    </div>    
-    </article>
-
-    <article>
-    <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div>
-    <div class="texTitle">Template 1 </div>
-     <div class="bottom-bar">
-          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
-    </div>    
-    </article>
-
-    <article>
-    <div class="tempPic"> <img src="https://vinusimages.co/wp-content/uploads/2018/10/EG7A2390.jpgA_.jpg" alt="Sample photo" /> </div>
-    <div class="texTitle">urna. Suspendisse</div>
-     <div class="bottom-bar">
-          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
-    </div>    
-    </article>
-
-    <article>
-    <div class="tempPic"> <img src="/img/sonia.jpg" alt="Sample photo" /> </div>
-    <div class="texTitle"> urna. Suspendisse</div>
-     <div class="bottom-bar">
-          <div class="view bottom-bar-icon"><VisibilityIcon /></div>
-          <div class="share bottom-bar-icon"><button><ShareIcon/></button></div>
-    </div>    
-    </article> */}
 
     <article class="createCard"> 
     {/* <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div> */}
