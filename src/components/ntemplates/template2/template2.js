@@ -8,6 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import $ from "jquery";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import ClipLoader from "react-spinners/ClipLoader";
 
 function Template1(){
       
@@ -53,7 +54,7 @@ function Template1(){
         
       
         <div className="temp1outer">
-            {load?<h1>Loading...</h1>:
+            {load?<ClipLoader size={70} />:
             <div className="temp1Inner">
                 <div className="temp1head canvasBox">                 
                 <nav className="temp1nav" >
