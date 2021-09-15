@@ -14,7 +14,7 @@ function ChangePassword(){
     
     async function handlesubmit(e){
         e.preventDefault();
-        const response = await fetch("http://localhost:5000/auth/changePassword",{
+        const response = await fetch("https://resumamabackend.herokuapp.com/auth/changePassword",{
             method:"POST",
              headers:{
              "Content-Type":"application/json"
