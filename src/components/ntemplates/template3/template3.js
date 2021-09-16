@@ -8,6 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import $ from "jquery";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import ClipLoader from "react-spinners/ClipLoader";
 
 function Template3(){
       
@@ -53,7 +54,7 @@ console.log(data.projects);
         
       
         <div className="temp3outer">
-            {load?<h1>Loading...</h1>:
+            {load?<ClipLoader size={70} />:
             <div className="temp3Inner">
                 <div className="temp3head canvasBox">                 
                 <nav className="temp3nav" >
@@ -80,7 +81,11 @@ console.log(data.projects);
                     <div class="t3lwhitesquare"></div>
                     <div class="t3greensquare"></div>
                     <div class="t3imgholder">
+<<<<<<< HEAD
+                     <img src={data.profileImage_url}/>
+=======
                     <img src={data.profileImage_url} />
+>>>>>>> 1a67c1ff92236d44b44eb2d9b32b7dc77015636a
                     </div>
                   </div>
                 </div>
