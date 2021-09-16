@@ -48,7 +48,7 @@ function Template3(){
     
        
     },[])
-// console.log(data.profileImage_url);
+console.log(data.projects);
     return (
         
       
@@ -114,12 +114,9 @@ function Template3(){
                 <div className="t3proj-Grid">
                     {data.projects.map((item,index)=>
                                     <div className="t3proj-card">
-                        {/* <div style={{backgroundImage: `url("https://drive.google.com/uc?export=view&id=1SKXpCCo4OANHOlBcXNJyyPuLcNRQGIWq")`}} className="t3proj-card-img-container">
-                          
-                        </div> */}
-                        
+                      
                         <div className="t3proj-card-img-container">
-                          <img src="/img/temprem.png"></img>
+                          <img src={item.image_url}></img>
                         </div>
 
 

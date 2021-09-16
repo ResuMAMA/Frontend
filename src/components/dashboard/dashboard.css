@@ -521,6 +521,16 @@
     color: rgb(89, 199, 243);
   }
 
+   .viewa{
+     color:white;
+   }
+   .viewa:visited{
+     color:white;
+   }
+  .viewa:hover{
+    color: rgb(89, 199, 243);
+  }
+
   /* .createCard{
 
   }

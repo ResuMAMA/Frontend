@@ -91,7 +91,7 @@ fetchData();
     <div class="tempPic"> <img src="https://picsum.photos/600/400?image=1083" alt="Sample photo" /> </div>
       <div class="texTitle">{item.title}</div>
         <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><a style={{color:"white"}}target="_blank" href={`localhost:3000/Template${item.template_no}/my_portfolio/${item._id}`}><VisibilityIcon /></a></div>
+         <div class="view bottom-bar-icon"><a class="viewa" target="_blank" href={`localhost:3000/Template${item.template_no}/my_portfolio/${item._id}`}><VisibilityIcon /></a></div>
          <div class="share bottom-bar-icon"><button onClick={(e)=>alert("Link to your portfolio: "+`localhost:3000/Template${item.template_no}/my_portfolio/${item._id}`)}><ShareIcon/></button></div>
         </div>      
     </article>)}
