@@ -81,7 +81,11 @@ function Template1(){
                     <div class="lwhitesquare"></div>
                     <div class="greensquare"></div>
                     <div class="imgholder">
+<<<<<<< HEAD
+                     <img src={data.profileImage_url} />
+=======
                      <img src={data.profileImage_url}/>
+>>>>>>> 02138b56b31f32c1b1a82e7da94c5c25e743c0b9
                     </div>
                   </div>
                 </div>

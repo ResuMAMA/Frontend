@@ -81,7 +81,11 @@ function Template3(){
                     <div class="t3lwhitesquare"></div>
                     <div class="t3greensquare"></div>
                     <div class="t3imgholder">
+<<<<<<< HEAD
                      <img src={data.profileImage_url}/>
+=======
+                    <img src={data.profileImage_url} />
+>>>>>>> 1a67c1ff92236d44b44eb2d9b32b7dc77015636a
                     </div>
                   </div>
                 </div>
