@@ -49,7 +49,7 @@ function Template1(){
     
        
     },[])
-    console.log(data.projects);
+    //console.log(data.projects);
     return (
         
       
@@ -120,7 +120,7 @@ function Template1(){
                         </div> */}
                            
                         <div className="proj-card-img-container">
-                          <img src="/img/temprem.png"></img>
+                          <img src={item.image_url}></img>
                         </div>
 
                         <div className="proj-card-content">
@@ -172,7 +172,7 @@ function Template1(){
   </Popup>    
                  
                   <a href={data.social_links.linkedIn}><LinkedInIcon className="footIcon"/></a>
-                 {data.social_links.github.length>2? <a href={data.social_links.github}><GitHubIcon className="footIcon"/></a>:<></>}
+                 {data.social_links.github>2? <a href={data.social_links.github}><GitHubIcon className="footIcon"/></a>:<></>}
                   <a href={`mailto:${data.email}`}><MailOutlineIcon className="footIcon"></MailOutlineIcon></a>
                   </div>
                   <div className="copyright"> ©Copyright {data.name}.com</div>
