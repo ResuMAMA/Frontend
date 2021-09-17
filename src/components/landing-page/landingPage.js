@@ -122,23 +122,38 @@ function LandingPage() {
           </div>
          
                
-            <div className="temp-Grid">
+            {/* <div className="temp-Grid">
                 <div className="temp-card">
                    <div  className="temp-card-img-container">
-                   <img src="/img/sonia.jpg"></img>
+                   <img src="/img/oh.png"></img>
                    </div>
                    <div className="temp-card-content">Classy and Elegant</div>
                 </div>
                 <div className="temp-card">
                    <div  className="temp-card-img-container">
-                   <img src="/img/sonia.jpg"></img>
+                   <img src="/img/oh.png"></img>
                    </div>
                    <div className="temp-card-content">That wow factor</div>
                 </div>                     
                     
-            </div>
+            </div> */}
           
-
+            <div className="temp-Grid">
+            <div className="temp-card">
+            <img src="/img/c2.png"></img>
+            <p>Classic Mix</p>
+            </div>
+                  {/* <img src="/img/c2.png"></img> */}
+                   {/* <div className="temp-card-content">Classy and Elegant</div> */}
+                   <div className="temp-card">
+                   <p>Pinkish Delight</p>
+                   <img src="/img/c1.png"></img>
+                   
+                  </div>
+                   {/* <div className="temp-card-content">That wow factor</div> */}
+              
+                    
+            </div>
 
           
           <div class="more">

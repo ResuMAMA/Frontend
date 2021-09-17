@@ -123,11 +123,11 @@ function Template3(){
 
 
                         <div className="t3proj-card-content">
-                        {/* <div> */}
+                        
                         <h1>{item.title}</h1>
                         <p className="t3proj-excerpt">{item.description}</p>
                         </div>
-                        {/* </div> */}
+                        
                     </div>
                     )}
                    
