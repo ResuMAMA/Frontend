@@ -44,7 +44,7 @@ fetchData();
 
 
 },[])
-
+// console.log(data);
   return (
   <div class="dash-main">
     <div class="dash-nav-out">

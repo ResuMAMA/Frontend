@@ -49,7 +49,7 @@ function Template3(){
     
        
     },[])
-console.log(data.projects);
+// console.log(data.projects);
     return (
         
       
@@ -81,11 +81,7 @@ console.log(data.projects);
                     <div class="t3lwhitesquare"></div>
                     <div class="t3greensquare"></div>
                     <div class="t3imgholder">
-<<<<<<< HEAD
                      <img src={data.profileImage_url}/>
-=======
-                    <img src={data.profileImage_url} />
->>>>>>> 1a67c1ff92236d44b44eb2d9b32b7dc77015636a
                     </div>
                   </div>
                 </div>
@@ -118,6 +114,7 @@ console.log(data.projects);
                 <div className="t3proj-Grid-div">
                 <div className="t3proj-Grid">
                     {data.projects.map((item,index)=>
+                    
                                     <div className="t3proj-card">
                       
                         <div className="t3proj-card-img-container">

@@ -49,7 +49,7 @@ function Template1(){
     
        
     },[])
-    console.log(data.projects);
+    // console.log(data.projects);
     return (
         
       
@@ -119,9 +119,10 @@ function Template1(){
                         
                         </div> */}
                            
-                        <div className="proj-card-img-container">
-                          <img src="/img/temprem.png"></img>
+                        <div className="t3proj-card-img-container">
+                          <img src={item.image_url}></img>
                         </div>
+
 
                         <div className="proj-card-content">
                         {/* <div> */}

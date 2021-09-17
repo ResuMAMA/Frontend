@@ -109,6 +109,7 @@
   .temp1nav{
     padding: 5px 0px;
     height: 60px;
+    background-color: #C2E43B;
   }
 }
 
@@ -311,22 +312,28 @@
   font-weight: 500;
   transition: all 0.1s ease;
   cursor: pointer;
-  box-shadow: 2px 2px 6px 0px rgba(255, 255, 255, 0.5);
+  /* box-shadow: 2px 2px 6px 0px rgba(255, 255, 255, 0.5); */
 }
 
 .hireme a{
   text-decoration: none;
+  color: #2A32DF;
 }
-
-.hireme a:visited{
-  color:white;
-}
-
-
-.hireme:hover{
+/* .hireme a:hover{
   background-color: #2A32DF;
   color: white;
+} */
+
+.hireme:hover{
+  background-color: #000000;
+  color: white;
 }
+
+
+.hireme a:visited{
+  color:#2A32DF;
+}
+
 
 .photodiv{
   text-align: center;
