@@ -81,11 +81,7 @@ console.log(data.projects);
                     <div class="t3lwhitesquare"></div>
                     <div class="t3greensquare"></div>
                     <div class="t3imgholder">
-<<<<<<< HEAD
-                     <img src={data.profileImage_url}/>
-=======
                     <img src={data.profileImage_url} />
->>>>>>> 1a67c1ff92236d44b44eb2d9b32b7dc77015636a
                     </div>
                   </div>
                 </div>
@@ -166,7 +162,7 @@ console.log(data.projects);
                         </div>
                 
                 </div>
-
+                
                 <div className="temp3foot" id="t3contact"> 
                   <div className="t3contactIcons">
                   <Popup trigger={<PhoneIcon className="t3footIcon"></PhoneIcon>} position="left center">
@@ -174,7 +170,7 @@ console.log(data.projects);
   </Popup>    
                  
                   <a href={data.social_links.linkedIn}><LinkedInIcon className="t3footIcon"/></a>
-                  <a href={data.social_links.github}><GitHubIcon className="t3footIcon"/></a>
+                  {data.social_links.github.length>2? <a href={data.social_links.github}><GitHubIcon className="footIcon"/></a>:<></>}
                   <a href={`mailto:${data.email}`}><MailOutlineIcon className="t3footIcon"></MailOutlineIcon></a>
                   </div>
                   <div className="t3copyright"> ©Copyright {data.name}.com</div>
