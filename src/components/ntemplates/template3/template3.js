@@ -163,7 +163,7 @@ function Template3(){
                         </div>
                 
                 </div>
-
+                
                 <div className="temp3foot" id="t3contact"> 
                   <div className="t3contactIcons">
                   <Popup trigger={<PhoneIcon className="t3footIcon"></PhoneIcon>} position="left center">
@@ -171,7 +171,7 @@ function Template3(){
   </Popup>    
                  
                   <a href={data.social_links.linkedIn}><LinkedInIcon className="t3footIcon"/></a>
-                  <a href={data.social_links.github}><GitHubIcon className="t3footIcon"/></a>
+                  {data.social_links.github>2? <a href={data.social_links.github}><GitHubIcon className="footIcon"/></a>:<></>}
                   <a href={`mailto:${data.email}`}><MailOutlineIcon className="t3footIcon"></MailOutlineIcon></a>
                   </div>
                   <div className="t3copyright"> ©Copyright {data.name}.com</div>

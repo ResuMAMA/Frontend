@@ -173,7 +173,7 @@ function Template1(){
   </Popup>    
                  
                   <a href={data.social_links.linkedIn}><LinkedInIcon className="footIcon"/></a>
-                  <a href={data.social_links.github}><GitHubIcon className="footIcon"/></a>
+                 {data.social_links.github>2? <a href={data.social_links.github}><GitHubIcon className="footIcon"/></a>:<></>}
                   <a href={`mailto:${data.email}`}><MailOutlineIcon className="footIcon"></MailOutlineIcon></a>
                   </div>
                   <div className="copyright"> ©Copyright {data.name}.com</div>
