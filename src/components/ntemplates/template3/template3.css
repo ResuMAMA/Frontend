@@ -92,6 +92,14 @@
   /* position: fixed; */
 }
 
+@media(max-width:400px){
+  .temp3nav{
+    padding: 5px 2px;
+    /* height: 60px; */
+    /* background-color: #DA9191; */
+  }
+}
+
 .temp3nav{
     position: fixed;
     top: 0;
@@ -106,12 +114,7 @@
     
 }
 
-@media(max-width:400px){
-  .temp3nav{
-    padding: 5px 0px;
-    height: 60px;
-  }
-}
+
 
 .Temp3Logo{
     flex: 1;

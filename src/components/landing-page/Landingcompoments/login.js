@@ -96,7 +96,7 @@ function Login() {
         <div className="user signinBx">
           <div className="imgBx">
             <img
-              src="/img/temprem.png"
+              src="/img/welcome.png"
               alt=""
             />
           </div>
@@ -134,7 +134,7 @@ function Login() {
           </div>
           <div className="imgBx">
             <img
-              src="/img/temprem.png"
+              src="/img/Come.png"
               alt=""
             />
           </div>

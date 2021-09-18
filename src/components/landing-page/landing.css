@@ -602,7 +602,7 @@ html, body{
 
 
 
-/*responsive----------------------------------------------------------------*/
+/*-------------------------------------------------------------------responsive----------------------------------------------------------------*/
 
 .response-main{
   width: 100%;
@@ -693,7 +693,7 @@ section .container .user .imgBx img {
   left: 0; */
   width: 350px;
   height: 350px;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 section .container .user .formBx {
@@ -753,12 +753,14 @@ section .container .user .formBx form .signup {
   color: #555;
   text-transform: uppercase;
   font-weight: 300;
+  
 }
 
 section .container .user .formBx form .signup a {
   font-weight: 600;
   text-decoration: none;
   color: #677eff;
+  cursor: pointer;
 }
 
 section .container .signupBx {
@@ -779,10 +781,18 @@ section .container.active .signupBx .formBx {
 
 section .container .signupBx .imgBx {
   left: -100%;
+  background-color: #2940D3;
 }
+
+/* section .container .signupBx .imgBx img{
+  width: 200px;
+  height: 200px;
+} */
 
 section .container.active .signupBx .imgBx {
   left: 0%;
+  
+
 }
 
 section .container .signinBx .formBx {
@@ -795,11 +805,17 @@ section .container.active .signinBx .formBx {
 
 section .container .signinBx .imgBx {
   left: 0%;
+  background-color: #2940D3;
 }
 
 section .container.active .signinBx .imgBx {
   left: -100%;
 }
+
+/* .imgBx img{
+  width: 100%;
+  height: 100%;
+} */
 
 @media (max-width: 991px) {
   section .container {
@@ -878,11 +894,21 @@ section .container.active .signinBx .imgBx {
  margin-left: 5px;
 }
 
+.forgotbutton a{
+  text-decoration: none;
+}
+
+.forgotbutton a:visited{
+  color: #677eff;
+}
+
 .forgotbutton:hover{
 background: rgb(37, 36, 36);
 font-weight: 600;
 color: white;
 }
+
+
 
 /*-------------------------------------------------------------forgot password-----------------------------------------------*/
 .forgotpss{
