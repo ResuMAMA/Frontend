@@ -91,7 +91,7 @@ fetchData();
     <div class="tempPic"> <img src={item.template_no==1?"/img/blue-black-template.png":"/img/pink-brown-template.png"} alt="Sample photo" /> </div>
       <div class="texTitle">{item.title}</div>
         <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><a class="viewa" target="_blank" href={`localhost:3000/Template${item.template_no}/my_portfolio/${item._id}`}><VisibilityIcon /></a></div>
+         <div class="view bottom-bar-icon"><button class="viewa"  onClick={(e)=>window.open(`http://localhost:3000/Template${item.template_no}/my_portfolio/${item._id}`,'_blank')}><VisibilityIcon /></button></div>
          <div class="share bottom-bar-icon"><button onClick={(e)=>alert("Link to your portfolio: "+`localhost:3000/Template${item.template_no}/my_portfolio/${item._id}`)}><ShareIcon/></button></div>
         </div>      
     </article>)}
