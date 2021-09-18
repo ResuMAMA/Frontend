@@ -12,7 +12,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 
 function Template3(){
       
-    
+ 
 
     function phoneview(){                             //for navbar
     // console.log("sdsjfhjf");
@@ -23,6 +23,7 @@ function Template3(){
     const [data,setData]=useState();
      //to be fetched from url..
     useEffect(()=>{
+        //window.location.reload();
         const id=document.URL.split("/")[5];
         //console.log(url)
        
