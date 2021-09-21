@@ -4,7 +4,8 @@ async function Validate(){
     const token=localStorage.getItem("token");
     if((!userId)||(!token))
     {
-        console.log("user is not logged In");
+        alert("Please SignIn/SignUp to continue..");
+        window.location="/";
         
     }    
 }

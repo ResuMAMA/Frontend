@@ -7,6 +7,7 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import ArrowForwardOutlinedIcon from '@material-ui/icons/ArrowForwardOutlined';
 import MenuIcon from '@material-ui/icons/Menu';
 import ReactPlayer from 'react-player';
+import Validate from '../../Validate'
 
 
 function LandingPage() {
@@ -104,7 +105,7 @@ function LandingPage() {
                 READY IN MINUTES </h1>
                 <p>without writing a single line of code!</p>
         <div class="get-s-div-ext">
-        <a href="../dashboard/dashboard">Get Started </a>
+        <a href="../dashboard/dashboard" onClick={(e)=>Validate()}>Get Started </a>
         <ArrowForwardOutlinedIcon style={{color: "yellow"}}/>
         </div>          
       
@@ -245,7 +246,7 @@ function LandingPage() {
          
         <div className="landfoot" id="landcontact"> 
                   <div className="landcontactIcons">
-                    <MailOutlineIcon className="landfootIcon"></MailOutlineIcon>
+                  <a style={{color:"white"}} href={`mailto:resumama.official@gmail.com`}><MailOutlineIcon className="landfootIcon"></MailOutlineIcon></a>
                   </div>
                   <div className="landcopyright"> Copyright © Resumama.com</div>
                 </div>

@@ -7,7 +7,7 @@ import DetailsForm from '../form/DetailsForm'
 function Create(){
 
 //states
-const [temp_no,setTemp_no]=useState(1);
+const [temp_no,setTemp_no]=useState();
 const [go,setgo]=useState(false)
 return (
   <div class="choosetem">
@@ -60,7 +60,11 @@ return (
       <div class="portfolioAlbumPage-template-content">  
           <h4>Step 2.<span> Fill the Details Form</span></h4>
           <button onClick={()=>{
+              if(!temp_no){
+              alert("Please choose a template!");}
+              else{
               setgo(true);
+              }
           }}>Go to Form </button>
       </div>
  </div>
