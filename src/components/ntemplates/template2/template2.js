@@ -23,8 +23,9 @@ function Template1(){
     const [data,setData]=useState();
      //to be fetched from url..
     useEffect(()=>{
+       // console.log(document.URL);
         const id=document.URL.split("/")[5];
-        //console.log(url)
+        //console.log(id)
        
         async function fetchData(){
         const response=await fetch("https://resumamabackend.herokuapp.com/portfolios/portfolio.me",{
@@ -36,7 +37,7 @@ function Template1(){
         })
         
         const realdata=await response.json();
-        console.log(realdata[0])
+    //    console.log(realdata[0])
         setData(realdata[0])
         if(data!==null){
         setTimeout(()=>{

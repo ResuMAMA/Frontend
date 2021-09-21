@@ -20,8 +20,8 @@ function App() {
          <Route path="/dashboard" component={Dashboard}/>
          <Route path="/createPortfolio" component={Create}/>
          <Route path="/form" component={Schema}/>       
-         <Route path="/Template1/my_portfolio/*" component={Template1}/>
-         <Route path="/Template2/my_portfolio/*" component={Template3}/>
+         <Route path="/classicMix/my_portfolio/*" component={Template1}/>
+         <Route path="/galadrielLight/my_portfolio/*" component={Template3}/>
          <Route path="/forgotPassword" component={ForgotPassword}/>
          <Route path="/changePassword" component={ChangePassword}/>
       </Switch>

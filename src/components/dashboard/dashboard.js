@@ -16,6 +16,7 @@ function Dashboard(){
 //logic---> fetch all the portfolios of the loggedIn user
    const[data,setData]=useState();
    const[loading,setLoading]=useState(true);
+
 useEffect(()=>{
     Validate();
     const user_id=localStorage.getItem("userid");
@@ -31,7 +32,7 @@ useEffect(()=>{
       })
      // console.log(response)
       const realdata=await response.json();
-      console.log(realdata)
+     // console.log(realdata)
       setData(realdata)
       if(data!==null){
       setTimeout(()=>{
@@ -91,8 +92,8 @@ fetchData();
     <div class="tempPic"> <img src={item.template_no==1?"/img/blue-black-template.png":"/img/pink-brown-template.png"} alt="Sample photo" /> </div>
       <div class="texTitle">{item.title}</div>
         <div class="bottom-bar">
-         <div class="view bottom-bar-icon"><button class="viewa"  onClick={(e)=>window.open(`http://localhost:3000/Template${item.template_no}/my_portfolio/${item._id}`,'_blank')}><VisibilityIcon /></button></div>
-         <div class="share bottom-bar-icon"><button onClick={(e)=>alert("Link to your portfolio: "+`localhost:3000/Template${item.template_no}/my_portfolio/${item._id}`)}><ShareIcon/></button></div>
+         <div class="view bottom-bar-icon"><button class="viewa"  onClick={(e)=>window.open(`http://localhost:3000/${item.template_no===1?"classicMix":"galadrielLight"}/my_portfolio/${item._id}`,'_blank')}><VisibilityIcon /></button></div>
+         <div class="share bottom-bar-icon"><button onClick={(e)=>alert("Link to your portfolio: "+`localhost:3000/${item.template_no===1?"classicMix":"galadrielLight"}/my_portfolio/${item._id}`)}><ShareIcon/></button></div>
         </div>      
     </article>)}
 

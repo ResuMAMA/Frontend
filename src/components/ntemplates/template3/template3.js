@@ -37,7 +37,7 @@ function Template3(){
         })
         
         const realdata=await response.json();
-        console.log(realdata[0])
+       // console.log(realdata[0])
         setData(realdata[0])
         if(data!==null){
         setTimeout(()=>{
