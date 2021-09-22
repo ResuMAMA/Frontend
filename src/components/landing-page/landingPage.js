@@ -75,21 +75,22 @@ function LandingPage() {
               <li class="nav-list-item"><a href="#homediv">Home</a></li>
               <li class="nav-list-item"><a href="#aboutdiv">About</a></li>
               <li class="nav-list-item"><a href="#directiondiv">Direction</a></li>
-              <li class="nav-list-item con-item"><a href="#landcontact">Contact</a></li>              
+              {/* <li class="nav-list-item con-item"><a href="#landcontact">Contact</a></li>               */}
             </ul>
          </div>
-        
       
+
       <div class="sign-div">
        {
-         userId?<div class="sign-content" ><a href="/dashboard/dashboard">
-         Dashboard</a></div>:
+         userId?<a href="/dashboard/dashboard"><div class="sign-content" >Dashboard</div></a>:
         <div class="sign-content" onClick={callogin}>
         Sign-up
         <LockOpenIcon className="lock" />
         </div>
          }
       </div>
+
+
     </div>
        
        
@@ -104,10 +105,9 @@ function LandingPage() {
             
                 READY IN MINUTES </h1>
                 <p>without writing a single line of code!</p>
-        <div class="get-s-div-ext">
-        <a href="../dashboard/dashboard" onClick={(e)=>Validate()}>Get Started </a>
-        <ArrowForwardOutlinedIcon style={{color: "yellow"}}/>
-        </div>          
+              <a class="getsa" href="../dashboard/dashboard" onClick={(e)=>Validate()}><div class="get-s-div-ext">Get Started <ArrowForwardOutlinedIcon style={{color: "yellow"}}/></div> </a>
+        
+         
       
           </div>
         </div>
@@ -147,7 +147,7 @@ function LandingPage() {
                   {/* <img src="/img/c2.png"></img> */}
                    {/* <div className="temp-card-content">Classy and Elegant</div> */}
                    <div className="temp-card">
-                   <p>Pinkish Delight</p>
+                   <p>Galadriel Light</p>
                    <img src="/img/c1.png"></img>
                    
                   </div>

@@ -42,7 +42,7 @@ return (
                    {/* <div className="temp-card-content">Classy and Elegant</div> */}
                    <div className="temp-card portfolioAlbumPage-temp-card" >
                    <img src="/img/c1.png"></img>
-                   <p>2. Pinkish Delight</p>
+                   <p>2. Galadriel Light</p>
                    
                    
                   </div>

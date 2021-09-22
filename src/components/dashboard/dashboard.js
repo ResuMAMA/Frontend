@@ -123,7 +123,7 @@ fetchData();
 
     <div className="dashfoot"> 
                   <div className="dashcontactIcons">
-                    <MailOutlineIcon className="dashfootIcon"></MailOutlineIcon>
+                  <a style={{color:"white"}} href={`mailto:resumama.official@gmail.com`}><MailOutlineIcon className="landfootIcon"></MailOutlineIcon></a>
                   </div>
                   <div className="dashcopyright"> Copyright © Resumama.com</div>
                 </div>
