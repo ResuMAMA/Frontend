@@ -65,7 +65,7 @@ function LandingPage() {
        
         <div class="Head-div">
         <div class="logo-div">
-        <p>Resumama </p>
+        <p>Resu</p>
         <a class="hamburger" href="#" onClick={phoneview}><MenuIcon/></a>
         </div>
        
